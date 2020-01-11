@@ -1,0 +1,1473 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AC_KSEQ_H	kseq.h	29;"	d
+AC_KSORT_H	ksort.h	56;"	d
+AC_KVEC_H	kvec.h	49;"	d
+AC_VERSION_KHASH_H	khash.h	113;"	d
+ALL_BUFS_SIZE	buldSeedExtIdxs.c	739;"	d	file:
+ALL_BUFS_SIZE	index1.c	2456;"	d	file:
+ALL_ONE_MASK	bwt_gen.h	37;"	d
+ALPHABET_SIZE	bwt_gen.h	28;"	d
+ATTRIBUTE	utils.h	41;"	d
+ATTRIBUTE	utils.h	43;"	d
+BITS_IN_BYTE	bwt_gen.h	34;"	d
+BITS_IN_WORD	bwt_gen.h	33;"	d
+BITS_PER_OCC_VALUE	bwt_gen.h	40;"	d
+BITS_PER_WORD	bitmap.c	27;"	d	file:
+BIT_PER_CHAR	bwt_gen.h	29;"	d
+BP_MASK	bitmap.c	29;"	d	file:
+BP_WORD	bitmap.c	28;"	d	file:
+BWA_BWT_H	bwt.h	29;"	d
+BWA_UBYTE	bntseq.h	35;"	d
+BWA_UBYTE	bwt.h	41;"	d
+BWT	bwt_gen.h	/^typedef struct BWT {$/;"	s
+BWT	bwt_gen.h	/^} BWT;$/;"	t	typeref:struct:BWT
+BWT::bwtCode	bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+BWT::bwtSizeInWord	bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::cumulativeFreq	bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+BWT::decodeTable	bwt_gen.h	/^	unsigned int *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+BWT::decodeTableGenerated	bwt_gen.h	/^	unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+BWT::inverseSa	bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSa0	bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+BWT::inverseSaInterval	bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSaSize	bwt_gen.h	/^	unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occMajorSizeInWord	bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occSizeInWord	bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occValue	bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::occValueMajor	bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saIndexRange	bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeNumOfChar	bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeSize	bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::saInterval	bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saValue	bwt_gen.h	/^	unsigned int *saValue;				\/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saValueOnBoundary	bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+BWT::saValueSize	bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::textLength	bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+BWTClearTrailingBwtCode	bwt_gen.c	/^void BWTClearTrailingBwtCode(BWT *bwt)$/;"	f	signature:(BWT *bwt)
+BWTCreate	bwt_gen.c	/^BWT *BWTCreate(const unsigned int textLength, unsigned int *decodeTable)$/;"	f	signature:(const unsigned int textLength, unsigned int *decodeTable)
+BWTFileSizeInWord	bwt_gen.c	/^static unsigned int BWTFileSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTFree	bwt_gen.c	/^void BWTFree(BWT *bwt)$/;"	f	signature:(BWT *bwt)
+BWTGenerateOccValueFromBwt	bwt_gen.c	/^void BWTGenerateOccValueFromBwt(const unsigned int*  bwt, unsigned int* __restrict occValue,$/;"	f	signature:(const unsigned int* bwt, unsigned int* __restrict occValue, unsigned int* __restrict occValueMajor, const unsigned int textLength, const unsigned int* decodeTable)
+BWTINC_INSERT_SORT_NUM_ITEM	bwt_gen.h	48;"	d
+BWTInc	bwt_gen.h	/^typedef struct BWTInc {$/;"	s
+BWTInc	bwt_gen.h	/^} BWTInc;$/;"	t	typeref:struct:BWTInc
+BWTInc::availableWord	bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+BWTInc::buildSize	bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::bwt	bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+BWTInc::cumulativeCountInCurrentBuild	bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+BWTInc::firstCharInLastIteration	bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+BWTInc::incMaxBuildSize	bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::initialMaxBuildSize	bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::numberOfIterationDone	bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedShift	bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedText	bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetNBit	bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetTextLength	bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+BWTInc::textBuffer	bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+BWTInc::workingMemory	bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+BWTIncBuildBwt	bwt_gen.c	/^static void BWTIncBuildBwt(unsigned int*  seq, const unsigned int *relativeRank, const unsigned int numChar,$/;"	f	file:	signature:(unsigned int* seq, const unsigned int *relativeRank, const unsigned int numChar, const unsigned int *cumulativeCount)
+BWTIncBuildPackedBwt	bwt_gen.c	/^static void BWTIncBuildPackedBwt(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar,$/;"	f	file:	signature:(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar, const unsigned int *cumulativeCount, const unsigned int *packedShift)
+BWTIncBuildRelativeRank	bwt_gen.c	/^static void BWTIncBuildRelativeRank(unsigned int* __restrict sortedRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(unsigned int* __restrict sortedRank, unsigned int* __restrict seq, unsigned int* __restrict relativeRank, const unsigned int numItem, unsigned int oldInverseSa0, const unsigned int *cumulativeCount)
+BWTIncConstruct	bwt_gen.c	/^static void BWTIncConstruct(BWTInc *bwtInc, const unsigned int numChar)$/;"	f	file:	signature:(BWTInc *bwtInc, const unsigned int numChar)
+BWTIncConstructFromPacked	bwt_gen.c	/^BWTInc *BWTIncConstructFromPacked(const char *inputFileName, const float targetNBit,$/;"	f	signature:(const char *inputFileName, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncCreate	bwt_gen.c	/^BWTInc *BWTIncCreate(const unsigned int textLength, const float targetNBit,$/;"	f	signature:(const unsigned int textLength, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncFree	bwt_gen.c	/^void BWTIncFree(BWTInc *bwtInc)$/;"	f	signature:(BWTInc *bwtInc)
+BWTIncGetAbsoluteRank	bwt_gen.c	/^static unsigned int BWTIncGetAbsoluteRank(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq, const unsigned int *packedText, const unsigned int numChar, const unsigned int* cumulativeCount, const unsigned int firstCharInLastIteration)
+BWTIncMergeBwt	bwt_gen.c	/^static void BWTIncMergeBwt(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt,$/;"	f	file:	signature:(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt, unsigned int* __restrict mergedBwt, const unsigned int numOldBwt, const unsigned int numInsertBwt)
+BWTIncPutPackedTextToRank	bwt_gen.c	/^static void BWTIncPutPackedTextToRank(const unsigned int *packedText, unsigned int* __restrict rank,$/;"	f	file:	signature:(const unsigned int *packedText, unsigned int* __restrict rank, unsigned int* __restrict cumulativeCount, const unsigned int numChar)
+BWTIncSetBuildSizeAndTextAddr	bwt_gen.c	/^static void BWTIncSetBuildSizeAndTextAddr(BWTInc *bwtInc)$/;"	f	file:	signature:(BWTInc *bwtInc)
+BWTIncSortKey	bwt_gen.c	/^static void BWTIncSortKey(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)$/;"	f	file:	signature:(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)
+BWTOccValue	bwt_gen.c	/^unsigned int BWTOccValue(const BWT *bwt, unsigned int index, const unsigned int character) {$/;"	f	signature:(const BWT *bwt, unsigned int index, const unsigned int character)
+BWTOccValueExplicit	bwt_gen.c	/^static inline unsigned int BWTOccValueExplicit(const BWT *bwt, const unsigned int occIndexExplicit,$/;"	f	file:	signature:(const BWT *bwt, const unsigned int occIndexExplicit, const unsigned int character)
+BWTOccValueMajorSizeInWord	bwt_gen.c	/^static unsigned int BWTOccValueMajorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTOccValueMinorSizeInWord	bwt_gen.c	/^static unsigned int BWTOccValueMinorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTResidentSizeInWord	bwt_gen.c	/^static unsigned int BWTResidentSizeInWord(const unsigned int numChar) {$/;"	f	file:	signature:(const unsigned int numChar)
+BWTSaveBwtCodeAndOcc	bwt_gen.c	/^void BWTSaveBwtCodeAndOcc(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)$/;"	f	signature:(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)
+BWT_BNTSEQ_H	bntseq.h	29;"	d
+BWT_GEN_H	bwt_gen.h	26;"	d
+BYTES_IN_WORD	bwt_gen.h	35;"	d
+BackwardDNAOccCount	bwt_gen.c	/^static unsigned int BackwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const unsigned int* dnaDecodeTable)
+BitPerBytePackedChar	bwt_gen.c	/^static unsigned int BitPerBytePackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+BitPerWordPackedChar	bwt_gen.c	/^static unsigned int BitPerWordPackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+CC	Makefile	/^CC=			gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=		-Wall -g -O2  $/;"	m
+CHAR_PER_BYTE	bwt_gen.h	31;"	d
+CHAR_PER_WORD	bwt_gen.h	30;"	d
+CIGAR_DEL	query.c	32;"	d	file:
+CIGAR_INS	query.c	31;"	d	file:
+CIGAR_MATCH	query.c	30;"	d	file:
+CXX	Makefile	/^CXX=		g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS=	$(CFLAGS)$/;"	m
+CapInfo	buldSeedExtIdxs.c	/^} CapInfo;$/;"	t	typeref:struct:__anon4	file:
+CapInfo	index1.c	/^} CapInfo;$/;"	t	typeref:struct:__anon23	file:
+ConvertBytePackedToWordPacked	bwt_gen.c	/^static void ConvertBytePackedToWordPacked(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize,$/;"	f	file:	signature:(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize, const unsigned int textLength)
+CrtJmpMod	buldSeedExtIdxs.c	/^void CrtJmpMod(int n, uint32_t cur_seedidx[][3], uint32_t* jmp_idx, uint8_t *mod_idx, uint32_t *cap_pos);$/;"	p	file:	signature:(int n, uint32_t cur_seedidx[][3], uint32_t* jmp_idx, uint8_t *mod_idx, uint32_t *cap_pos)
+CrtJmpMod	buldSeedExtIdxs.c	/^void CrtJmpMod(int n, uint32_t cur_seedidx[][3], uint32_t* jump_idx, $/;"	f	signature:(int n, uint32_t cur_seedidx[][3], uint32_t* jump_idx, uint8_t *mod_idx, uint32_t *cap_pos)
+CrtJmpMod	index1.c	/^void CrtJmpMod(int n, uint32_t cur_seedidx[][3], uint32_t* jmp_idx, uint8_t *mod_idx, uint32_t *cap_pos);$/;"	p	file:	signature:(int n, uint32_t cur_seedidx[][3], uint32_t* jmp_idx, uint8_t *mod_idx, uint32_t *cap_pos)
+CrtJmpMod	index1.c	/^void CrtJmpMod(int n, uint32_t cur_seedidx[][3], uint32_t* jump_idx, $/;"	f	signature:(int n, uint32_t cur_seedidx[][3], uint32_t* jump_idx, uint8_t *mod_idx, uint32_t *cap_pos)
+DEBUG	aln.c	28;"	d	file:
+DEBUG	test_aln.c	28;"	d	file:
+DFLAGS	Makefile	/^DFLAGS=		-DFILE_OFFSET_BITS=64#-DHAVE_PTHREAD #-DDEBUG#-D_FILE_OFFSET_BITS=64 $/;"	m
+DNA_OCC_CNT_TABLE_SIZE_IN_WORD	bwt_gen.h	38;"	d
+DNA_OCC_SUM_EXCEPTION	bwt_gen.h	57;"	d
+EQUAL_KEY_THRESHOLD	bwt_gen.c	651;"	d	file:
+FALSE	bwt_gen.h	46;"	d
+FSYNC_ON_FLUSH	utils.c	27;"	d	file:
+FileName	setFileName.h	/^} FileName;$/;"	t	typeref:struct:__anon30
+ForwardDNAAllOccCountNoLimit	bwt_gen.c	/^static void ForwardDNAAllOccCountNoLimit(const unsigned int*  dna, const unsigned int index,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, unsigned int* __restrict occCount, const unsigned int* dnaDecodeTable)
+ForwardDNAOccCount	bwt_gen.c	/^static unsigned int ForwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const unsigned int* dnaDecodeTable)
+GenerateDNAOccCountTable	bwt_gen.c	/^static void GenerateDNAOccCountTable(unsigned int *dnaDecodeTable)$/;"	f	file:	signature:(unsigned int *dnaDecodeTable)
+HASH_SIZE	index.c	/^const int HASH_SIZE = 4097;$/;"	v
+HASH_SIZE	index1.c	/^const int HASH_SIZE = 4097;$/;"	v
+HASH_SIZE	index2.c	/^const int HASH_SIZE = 4097;$/;"	v
+HASH_SIZE	test_index.c	/^const int HASH_SIZE = 4097;$/;"	v
+IDX_MID_SIZE	index1.c	610;"	d	file:
+INCLUDES	Makefile	/^INCLUDES=	$/;"	m
+INIT_HIT_NUM	query.c	135;"	d	file:
+INSERT_SORT_NUM_ITEM	QSufSort.h	33;"	d
+INTV_BP	bitmap.c	26;"	d	file:
+IS_SMLSIZ	buldSeedExtIdxs.c	50;"	d	file:
+IS_SMLSIZ	index1.c	1775;"	d	file:
+IS_SMLSIZ	index1.c	611;"	d	file:
+InitSubBuf	buldSeedExtIdxs.c	/^void InitSubBuf(SubBuf *sub_buf);$/;"	p	file:	signature:(SubBuf *sub_buf)
+InitSubBuf	buldSeedExtIdxs.c	/^void InitSubBuf(SubBuf *sub_buf){$/;"	f	signature:(SubBuf *sub_buf)
+InitSubBuf	index1.c	/^void InitSubBuf(SubBuf *sub){$/;"	f	signature:(SubBuf *sub)
+InitSubBuf	index1.c	/^void InitSubBuf(SubBuf *sub_buf);$/;"	p	file:	signature:(SubBuf *sub_buf)
+KEY	QSufSort.h	32;"	d
+KHASH_DECLARE	khash.h	345;"	d
+KHASH_INIT	khash.h	353;"	d
+KHASH_INIT2	khash.h	349;"	d
+KHASH_MAP_INIT_INT	khash.h	593;"	d
+KHASH_MAP_INIT_INT64	khash.h	608;"	d
+KHASH_MAP_INIT_STR	khash.h	624;"	d
+KHASH_SET_INIT_INT	khash.h	585;"	d
+KHASH_SET_INIT_INT64	khash.h	600;"	d
+KHASH_SET_INIT_STR	khash.h	616;"	d
+KSEQ_DECLARE	kseq.h	228;"	d
+KSEQ_INIT	kseq.h	226;"	d
+KSEQ_INIT2	kseq.h	220;"	d
+KSEQ_INIT2	utils.c	/^KSEQ_INIT2(, gzFile, err_gzread)$/;"	f
+KSORT_INIT	ksort.h	72;"	d
+KSORT_INIT_GENERIC	ksort.h	270;"	d
+KSORT_INIT_STR	ksort.h	271;"	d
+KSORT_SWAP	ksort.h	70;"	d
+KSTREAM_INIT	kseq.h	143;"	d
+KSTRING_H	kstring.h	2;"	d
+KSTRING_T	kseq.h	80;"	d
+KSTRING_T	kstring.h	16;"	d
+KS_SEP_LINE	kseq.h	37;"	d
+KS_SEP_MAX	kseq.h	38;"	d
+KS_SEP_SPACE	kseq.h	35;"	d
+KS_SEP_TAB	kseq.h	36;"	d
+L0	aln.c	/^const int L0 = 12;$/;"	v
+L0	test_aln.c	/^const int L0 = 12;$/;"	v
+L1	aln.c	/^const int L1 = 20;$/;"	v
+L1	test_aln.c	/^const int L1 = 20;$/;"	v
+L2	bwt.h	/^	bwtint_t L2[5]; \/\/ C(), cumulative count$/;"	m	struct:__anon6	access:public
+L2rel	buldSeedExtIdxs.c	/^	uint32_t *L2rel ;$/;"	m	struct:__anon5	file:	access:public
+L2rel	index1.c	/^	uint32_t *L2rel ;$/;"	m	struct:__anon24	file:	access:public
+LEN_EXT	buldSeedExtIdxs.c	45;"	d	file:
+LEN_EXT	index1.c	1770;"	d	file:
+LEN_EXT	index1.c	609;"	d	file:
+LEN_EXT	index2.c	595;"	d	file:
+LEN_EXT	setFileName.h	17;"	d
+LEN_EXT_IDX	buldSeedExtIdxs.c	51;"	d	file:
+LEN_EXT_IDX	index1.c	1776;"	d	file:
+LEN_EXT_IDX	setFileName.h	23;"	d
+LEN_FILE_NAME	buldSeedExtIdxs.c	49;"	d	file:
+LEN_FILE_NAME	index1.c	1774;"	d	file:
+LEN_FILE_NAME	setFileName.h	21;"	d
+LEN_NEXT_IDX	index1.c	607;"	d	file:
+LEN_READ	buldSeedExtIdxs.c	46;"	d	file:
+LEN_READ	index1.c	1771;"	d	file:
+LEN_READ	setFileName.h	18;"	d
+LEN_SEED	buldSeedExtIdxs.c	43;"	d	file:
+LEN_SEED	index1.c	1768;"	d	file:
+LEN_SEED	index1.c	608;"	d	file:
+LEN_SEED	index2.c	594;"	d	file:
+LEN_SEED	setFileName.h	15;"	d
+LH3_UTILS_H	utils.h	33;"	d
+LIBS	Makefile	/^LIBS=		-lm -lz$/;"	m
+LOG	utils.h	47;"	d
+LOG	utils.h	49;"	d
+L_MID_SEED	index.c	186;"	d	file:
+L_MID_SEED	index1.c	310;"	d	file:
+L_MID_SEED	index2.c	296;"	d	file:
+L_MID_SEED	test_index.c	293;"	d	file:
+L_SEED	aln.c	/^const int L_SEED = 36;$/;"	v
+L_SEED	test_aln.c	/^const int L_SEED = 36;$/;"	v
+MALLOC_WRAP_H	malloc_wrap.h	2;"	d
+MASK_2NT	index.c	184;"	d	file:
+MASK_2NT	index1.c	308;"	d	file:
+MASK_2NT	index2.c	294;"	d	file:
+MASK_2NT	test_index.c	291;"	d	file:
+MASK_6NT	index.c	185;"	d	file:
+MASK_6NT	index1.c	309;"	d	file:
+MASK_6NT	index2.c	295;"	d	file:
+MASK_6NT	test_index.c	292;"	d	file:
+MAX_ALN	aln.c	472;"	d	file:
+MAX_ALN	test_aln.c	402;"	d	file:
+MAX_BLCK_SIZE	buldSeedExtIdxs.c	737;"	d	file:
+MAX_BLCK_SIZE	index1.c	2454;"	d	file:
+MAX_CHAR	variants.c	28;"	d	file:
+MAX_COUNT	buldSeedExtIdxs.c	574;"	d	file:
+MAX_COUNT	index.c	195;"	d	file:
+MAX_COUNT	index1.c	2291;"	d	file:
+MAX_COUNT	index1.c	50;"	d	file:
+MAX_COUNT	index2.c	494;"	d	file:
+MAX_COUNT	test_index.c	302;"	d	file:
+MAX_DIFF	aln.c	186;"	d	file:
+MAX_DIFF	test_aln.c	173;"	d	file:
+MAX_DISTANCE	aln.c	329;"	d	file:
+MAX_NAME	buldSeedExtIdxs.c	26;"	d	file:
+MAX_NAME	gen_test_seeds.c	52;"	d	file:
+MAX_NAME	index.c	31;"	d	file:
+MAX_NAME	index1.c	33;"	d	file:
+MAX_NAME	index2.c	33;"	d	file:
+MAX_NAME	test_index.c	33;"	d	file:
+MAX_NAME	test_locate.c	32;"	d	file:
+MAX_NUM	bitmap.c	216;"	d	file:
+MAX_SEED_NUM	aln.c	471;"	d	file:
+MAX_SEED_NUM	buldSeedExtIdxs.c	48;"	d	file:
+MAX_SEED_NUM	index1.c	1773;"	d	file:
+MAX_SEED_NUM	setFileName.h	20;"	d
+MAX_SEED_NUM	test_aln.c	401;"	d	file:
+MAX_SEED_SIZE	buldSeedExtIdxs.c	738;"	d	file:
+MAX_SEED_SIZE	index1.c	2455;"	d	file:
+MAX_STR_LEN	query.h	26;"	d
+MAX_UNIQUE_HITS	query.h	25;"	d
+MIN_AVAILABLE_WORD	bwt_gen.c	31;"	d	file:
+NUM_EXT	buldSeedExtIdxs.c	47;"	d	file:
+NUM_EXT	index1.c	1772;"	d	file:
+NUM_EXT	setFileName.h	19;"	d
+NUM_FILES	setFileName.h	56;"	d
+N_EXT	index1.c	606;"	d	file:
+N_EXT	index2.c	593;"	d	file:
+N_SEQS	aln.c	61;"	d	file:
+N_SEQS	test_aln.c	50;"	d	file:
+N_TABLE	aln.c	162;"	d	file:
+N_TABLE	test_aln.c	149;"	d	file:
+OCC_INTERVAL	bwt.h	38;"	d
+OCC_INTERVAL	bwt_gen.h	42;"	d
+OCC_INTERVAL_MAJOR	bwt_gen.h	43;"	d
+OCC_VALUE_PER_WORD	bwt_gen.h	41;"	d
+OFF_SEED	buldSeedExtIdxs.c	44;"	d	file:
+OFF_SEED	index1.c	1769;"	d	file:
+OFF_SEED	setFileName.h	16;"	d
+OpenSeedIdxfiles	buldSeedExtIdxs.c	/^void OpenSeedIdxfiles(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[6]);$/;"	p	file:	signature:(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[6])
+OpenSeedIdxfiles	buldSeedExtIdxs.c	/^void OpenSeedIdxfiles(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[]){$/;"	f	signature:(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[])
+OpenSeedIdxfiles	index1.c	/^void OpenSeedIdxfiles(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[6]);$/;"	p	file:	signature:(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[6])
+OpenSeedIdxfiles	index1.c	/^void OpenSeedIdxfiles(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[]){$/;"	f	signature:(FileName *f, uint32_t (*sidx)[3], uint32_t LenExtIdx[],uint32_t repNum,FILE *fpw[])
+POWER_OF_2	lookup.c	27;"	d	file:
+PROG	Makefile	/^PROG=		index aln gen_seed aln_debug test_index test_aln$/;"	m
+QSufSortBucketSort	QSufSort.c	/^static void QSufSortBucketSort(int* __restrict V, int* __restrict I, const int numChar, const int alphabetSize) {$/;"	f	file:	signature:(int* __restrict V, int* __restrict I, const int numChar, const int alphabetSize)
+QSufSortBucketSort	QSufSort.c	/^static void QSufSortBucketSort(int* __restrict V, int* __restrict I, const int numChar, const int alphabetSize);$/;"	p	file:	signature:(int* __restrict V, int* __restrict I, const int numChar, const int alphabetSize)
+QSufSortChoosePivot	QSufSort.c	/^static int QSufSortChoosePivot(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	f	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortChoosePivot	QSufSort.c	/^static int QSufSortChoosePivot(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	p	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortGenerateSaFromInverse	QSufSort.c	/^void QSufSortGenerateSaFromInverse(const int* V, int* __restrict I, const int numChar) {$/;"	f	signature:(const int* V, int* __restrict I, const int numChar)
+QSufSortGenerateSaFromInverse	QSufSort.h	/^void QSufSortGenerateSaFromInverse(const int *V, int* __restrict I, const int numChar);$/;"	p	signature:(const int *V, int* __restrict I, const int numChar)
+QSufSortInsertSortSplit	QSufSort.c	/^static void QSufSortInsertSortSplit(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	f	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortInsertSortSplit	QSufSort.c	/^static void QSufSortInsertSortSplit(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	p	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortSortSplit	QSufSort.c	/^static void QSufSortSortSplit(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	f	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortSortSplit	QSufSort.c	/^static void QSufSortSortSplit(int* __restrict V, int* __restrict I, const int lowestPos, $/;"	p	file:	signature:(int* __restrict V, int* __restrict I, const int lowestPos, const int highestPos, const int numSortedChar)
+QSufSortSuffixSort	QSufSort.c	/^void QSufSortSuffixSort(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, $/;"	f	signature:(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, const int smallestInputSymbol, const int skipTransform)
+QSufSortSuffixSort	QSufSort.h	/^void QSufSortSuffixSort(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, $/;"	p	signature:(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, const int smallestInputSymbol, const int skipTransform)
+QSufSortTransform	QSufSort.c	/^static int QSufSortTransform(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, $/;"	f	file:	signature:(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, const int smallestInputSymbol, const int maxNewAlphabetSize, int *numSymbolAggregated)
+QSufSortTransform	QSufSort.c	/^static int QSufSortTransform(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, $/;"	p	file:	signature:(int* __restrict V, int* __restrict I, const int numChar, const int largestInputSymbol, const int smallestInputSymbol, const int maxNewAlphabetSize, int *numSymbolAggregated)
+ROOT	setFileName.c	/^const char* ROOT=".";$/;"	v
+ROOT_PATH	index1.c	652;"	d	file:
+ROOT_PATH	test.c	31;"	d	file:
+SA_INTV	index.c	/^const int SA_INTV = 1;$/;"	v
+SA_INTV	index1.c	/^const int SA_INTV = 1;$/;"	v
+SA_INTV	index2.c	/^const int SA_INTV = 1;$/;"	v
+SA_INTV	test_index.c	/^const int SA_INTV = 1;$/;"	v
+SCORE_GAP	query.c	29;"	d	file:
+SCORE_MATCH	query.c	27;"	d	file:
+SCORE_MISMATCH	query.c	28;"	d	file:
+SRC	Makefile	/^SRC= 		utils.c malloc_wrap.c bwt.c bwtio.c is.c\\$/;"	m
+STRAND_BACKWARD	query.h	28;"	d
+STRAND_FORWARD	query.h	27;"	d
+SUBDIRS	Makefile	/^SUBDIRS=	. $/;"	m
+SWAP	buldSeedExtIdxs.c	30;"	d	file:
+SWAP	index1.c	51;"	d	file:
+SWAP	index2.c	495;"	d	file:
+SaIndexRange	bwt_gen.h	/^typedef struct SaIndexRange {$/;"	s
+SaIndexRange	bwt_gen.h	/^} SaIndexRange;$/;"	t	typeref:struct:SaIndexRange
+SaIndexRange::endSaIndex	bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::startSaIndex	bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SubBuf	buldSeedExtIdxs.c	/^} SubBuf;  $/;"	t	typeref:struct:__anon5	file:
+SubBuf	index1.c	/^} SubBuf;  $/;"	t	typeref:struct:__anon24	file:
+TRUE	bwt_gen.h	45;"	d
+TextLengthFromBytePacked	bwt_gen.c	/^static unsigned int TextLengthFromBytePacked(unsigned int bytePackedLength, unsigned int bitPerChar,$/;"	f	file:	signature:(unsigned int bytePackedLength, unsigned int bitPerChar, unsigned int lastByteLength)
+USE_MALLOC_WRAPPERS	buldSeedExtIdxs.c	24;"	d	file:
+USE_MALLOC_WRAPPERS	bwt.h	33;"	d
+USE_MALLOC_WRAPPERS	index1.c	32;"	d	file:
+USE_MALLOC_WRAPPERS	index2.c	32;"	d	file:
+USE_MALLOC_WRAPPERS	malloc_wrap.c	7;"	d	file:
+USE_MALLOC_WRAPPERS	test_index.c	32;"	d	file:
+USE_MALLOC_WRAPPERS	test_locate.c	33;"	d	file:
+__AC_KHASH_H	khash.h	105;"	d
+__ALN_H	aln.h	19;"	d
+__BITMAP_H	bitmap.h	20;"	d
+__BITS_COUNT	bitmap.c	/^static uint32_t __BITS_COUNT(uint32_t v)$/;"	f	file:	signature:(uint32_t v)
+__BSEARCH_H	bsearch.h	19;"	d
+__INDEX_H	index.h	19;"	d
+__KHASH_IMPL	khash.h	198;"	d
+__KHASH_PROTOTYPES	khash.h	189;"	d
+__KHASH_TYPE	khash.h	181;"	d
+__KSEQ_BASIC	kseq.h	151;"	d
+__KSEQ_READ	kseq.h	171;"	d
+__KSEQ_TYPE	kseq.h	213;"	d
+__KS_BASIC	kseq.h	50;"	d
+__KS_GETC	kseq.h	66;"	d
+__KS_GETUNTIL	kseq.h	91;"	d
+__KS_TYPE	kseq.h	40;"	d
+__LOOLUPTABLE_H	lookup.h	2;"	d
+__POPCOUNT	aln.c	/^static inline uint32_t __POPCOUNT(uint32_t v)$/;"	f	file:	signature:(uint32_t v)
+__POPCOUNT	test_aln.c	/^static inline uint32_t __POPCOUNT(uint32_t v)$/;"	f	file:	signature:(uint32_t v)
+__QSUFSORT_H__	QSufSort.h	30;"	d
+__QUERY_H	query.h	2;"	d
+__VARIANTS_H_	variants.h	19;"	d
+__ac_HASH_UPPER	khash.h	/^static const double __ac_HASH_UPPER = 0.77;$/;"	v
+__ac_Wang_hash	khash.h	/^static kh_inline khint_t __ac_Wang_hash(khint_t key)$/;"	f	signature:(khint_t key)
+__ac_X31_hash_string	khash.h	/^static kh_inline khint_t __ac_X31_hash_string(const char *s)$/;"	f	signature:(const char *s)
+__ac_fsize	khash.h	160;"	d
+__ac_inc	khash.h	155;"	d
+__ac_inc	khash.h	157;"	d
+__ac_isdel	khash.h	147;"	d
+__ac_iseither	khash.h	148;"	d
+__ac_isempty	khash.h	146;"	d
+__ac_set_isboth_false	khash.h	151;"	d
+__ac_set_isdel_false	khash.h	149;"	d
+__ac_set_isdel_true	khash.h	152;"	d
+__ac_set_isempty_false	khash.h	150;"	d
+__anon10::alt	query.h	/^    aln_t *alt;\/\/alternative alignments$/;"	m	struct:__anon10	access:public
+__anon10::cigar	query.h	/^    char *cigar;$/;"	m	struct:__anon10	access:public
+__anon10::comment	query.h	/^    char *name, *comment;$/;"	m	struct:__anon10	access:public
+__anon10::l_cigar	query.h	/^    int l_cigar;$/;"	m	struct:__anon10	access:public
+__anon10::l_seq	query.h	/^    int l_seq;  $/;"	m	struct:__anon10	access:public
+__anon10::n_N	query.h	/^    int n_N;$/;"	m	struct:__anon10	access:public
+__anon10::n_alt	query.h	/^    int n_alt;$/;"	m	struct:__anon10	access:public
+__anon10::n_seed	query.h	/^    int n_seed;$/;"	m	struct:__anon10	access:public
+__anon10::name	query.h	/^    char *name, *comment;$/;"	m	struct:__anon10	access:public
+__anon10::pos	query.h	/^    uint32_t pos;\/\/primary alignment$/;"	m	struct:__anon10	access:public
+__anon10::qual	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+__anon10::rseq	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+__anon10::seed_list	query.h	/^    seed_t *seed_list;$/;"	m	struct:__anon10	access:public
+__anon10::seq	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+__anon10::seq_end	query.h	/^    uint32_t seq_start, seq_end;$/;"	m	struct:__anon10	access:public
+__anon10::seq_start	query.h	/^    uint32_t seq_start, seq_end;$/;"	m	struct:__anon10	access:public
+__anon11::fp	query.h	/^    gzFile fp;$/;"	m	struct:__anon11	access:public
+__anon11::kseq	query.h	/^    kseq_t *kseq;$/;"	m	struct:__anon11	access:public
+__anon12::n	aln.c	/^    int n;$/;"	m	struct:__anon12	file:	access:public
+__anon12::seq	aln.c	/^    uint8_t *seq;$/;"	m	struct:__anon12	file:	access:public
+__anon13::seed_intv	aln.c	/^    int seed_intv;\/\/seed extract interval $/;"	m	struct:__anon13	file:	access:public
+__anon13::trim_left	aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon13	file:	access:public
+__anon13::trim_right	aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon13	file:	access:public
+__anon14::k	aln.c	/^    uint32_t k, l;$/;"	m	struct:__anon14	file:	access:public
+__anon14::l	aln.c	/^    uint32_t k, l;$/;"	m	struct:__anon14	file:	access:public
+__anon14::local_lext0	aln.c	/^    ext_t *local_lext0, *local_rext;$/;"	m	struct:__anon14	file:	access:public
+__anon14::local_lext1	aln.c	/^    uint32_t *local_lext1;$/;"	m	struct:__anon14	file:	access:public
+__anon14::local_rext	aln.c	/^    ext_t *local_lext0, *local_rext;$/;"	m	struct:__anon14	file:	access:public
+__anon14::map	aln.c	/^    bp_t *map;\/\/auxiliary bit map$/;"	m	struct:__anon14	file:	access:public
+__anon14::n_lext0	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+__anon14::n_lext1	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+__anon14::n_rext	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+__anon14::seq_buf	aln.c	/^    uint32_t *seq_buf[2];$/;"	m	struct:__anon14	file:	access:public
+__anon15::k	aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+__anon15::k0	aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+__anon15::l	aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+__anon15::l0	aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+__anon15::l_aln	aln.c	/^    int l_aln;$/;"	m	struct:__anon15	file:	access:public
+__anon15::pos	aln.c	/^    uint32_t pos;$/;"	m	struct:__anon15	file:	access:public
+__anon15::preseq	aln.c	/^    uint8_t preseq[8];\/* variant preseq include 2bp variants *\/$/;"	m	struct:__anon15	file:	access:public
+__anon15::var	aln.c	/^    uint8_t var;$/;"	m	struct:__anon15	file:	access:public
+__anon16::x	utils.h	/^	uint64_t x, y;$/;"	m	struct:__anon16	access:public
+__anon16::y	utils.h	/^	uint64_t x, y;$/;"	m	struct:__anon16	access:public
+__anon17::a	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+__anon17::m	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+__anon17::n	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+__anon18::a	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+__anon18::m	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+__anon18::n	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+__anon19::item	lookup.h	/^    uint32_t *item;$/;"	m	struct:__anon19	access:public
+__anon19::maxLookupLen	lookup.h	/^    uint32_t maxLookupLen;$/;"	m	struct:__anon19	access:public
+__anon19::n_item	lookup.h	/^    uint32_t n_item;$/;"	m	struct:__anon19	access:public
+__anon1::a	bitmap.h	/^    uint32_t *a;\/\/n_a = m*(sizeof(uint32_t))$/;"	m	struct:__anon1	access:public
+__anon1::intv	bitmap.h	/^    int intv;$/;"	m	struct:__anon1	access:public
+__anon1::l	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+__anon1::m	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+__anon1::n_a	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+__anon1::n_occ	bitmap.h	/^    int n_occ;$/;"	m	struct:__anon1	access:public
+__anon1::occ	bitmap.h	/^    size_t *occ;$/;"	m	struct:__anon1	access:public
+__anon20::anno	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon20	access:public
+__anon20::gi	bntseq.h	/^	uint32_t gi;$/;"	m	struct:__anon20	access:public
+__anon20::len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon20	access:public
+__anon20::n_ambs	bntseq.h	/^	int32_t n_ambs;$/;"	m	struct:__anon20	access:public
+__anon20::name	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon20	access:public
+__anon20::offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon20	access:public
+__anon21::amb	bntseq.h	/^	char amb;$/;"	m	struct:__anon21	access:public
+__anon21::len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon21	access:public
+__anon21::offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon21	access:public
+__anon22::ambs	bntseq.h	/^	bntamb1_t *ambs; \/\/ n_holes elements$/;"	m	struct:__anon22	access:public
+__anon22::anns	bntseq.h	/^	bntann1_t *anns; \/\/ n_seqs elements$/;"	m	struct:__anon22	access:public
+__anon22::fp_pac	bntseq.h	/^	FILE *fp_pac;$/;"	m	struct:__anon22	access:public
+__anon22::l_pac	bntseq.h	/^	int64_t l_pac;$/;"	m	struct:__anon22	access:public
+__anon22::n_holes	bntseq.h	/^	int32_t n_holes;$/;"	m	struct:__anon22	access:public
+__anon22::n_seqs	bntseq.h	/^	int32_t n_seqs;$/;"	m	struct:__anon22	access:public
+__anon22::seed	bntseq.h	/^	uint32_t seed;$/;"	m	struct:__anon22	access:public
+__anon23::num_pos	index1.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon23	file:	access:public
+__anon23::num_relat	index1.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon23	file:	access:public
+__anon23::num_seqL	index1.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon23	file:	access:public
+__anon23::num_seqR	index1.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon23	file:	access:public
+__anon23::nxtcap	index1.c	/^    uint32_t nxtcap;	$/;"	m	struct:__anon23	file:	access:public
+__anon23::relat	index1.c	/^	uint32_t relat;	$/;"	m	struct:__anon23	file:	access:public
+__anon23::smbwt	index1.c	/^	uint8_t  smbwt;$/;"	m	struct:__anon23	file:	access:public
+__anon24::L2rel	index1.c	/^	uint32_t *L2rel ;$/;"	m	struct:__anon24	file:	access:public
+__anon24::bwt_seqL	index1.c	/^	uint8_t  *bwt_seqL;   $/;"	m	struct:__anon24	file:	access:public
+__anon24::bwt_seqR	index1.c	/^	uint8_t  *bwt_seqR;   $/;"	m	struct:__anon24	file:	access:public
+__anon24::bwt_sumL	index1.c	/^	uint8_t  *bwt_sumL; $/;"	m	struct:__anon24	file:	access:public
+__anon24::bwt_sumR	index1.c	/^	uint8_t  *bwt_sumR;$/;"	m	struct:__anon24	file:	access:public
+__anon24::cap	index1.c	/^	CapInfo cap[1];$/;"	m	struct:__anon24	file:	access:public
+__anon24::extIdx	index1.c	/^	uint32_t (*extIdx)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon24	file:	access:public
+__anon24::idxR	index1.c	/^	uint32_t (*idxR)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_capidx	index1.c	/^	uint32_t len_capidx ;  \/\/ 当前块前为止capidx数组中的全局capidx数据长度；$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_nxtflg	index1.c	/^	uint32_t len_nxtflg ;  \/\/ 当前块前为止nxtflg数组中的全局flg数据长度；$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_nxtpnt	index1.c	/^	uint32_t len_nxtpnt ;  \/\/ 当前块前为止nxtpnt数组中的全局nxtpnt数据长度；$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_relat	index1.c	/^	uint32_t len_relat  ;  \/\/ 当前块前为止relat数组中的全局relat数据长度；	$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_smbwt	index1.c	/^	uint32_t len_smbwt  ;  \/\/ 当前块前为止smbwt数组中的全局smbwt数据长度；	$/;"	m	struct:__anon24	file:	access:public
+__anon24::len_smpos	index1.c	/^	uint32_t len_smpos  ;  \/\/ 当前块前为止smpos数组中的全局pos数据长度；$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtL	index1.c	/^	uint32_t num_bwtL;$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtR	index1.c	/^	uint32_t num_bwtR;$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtseqL	index1.c	/^	uint8_t  num_bwtseqL;   $/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtseqR	index1.c	/^	uint8_t  num_bwtseqR;   $/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtsumL	index1.c	/^	uint8_t  num_bwtsumL; $/;"	m	struct:__anon24	file:	access:public
+__anon24::num_bwtsumR	index1.c	/^	uint8_t  num_bwtsumR;$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_pos	index1.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_relat	index1.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_seqL	index1.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon24	file:	access:public
+__anon24::num_seqR	index1.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon24	file:	access:public
+__anon24::nxt_flg	index1.c	/^	uint8_t  *nxt_flg;  \/\/ 保存当前快中的nxt_flg数据；$/;"	m	struct:__anon24	file:	access:public
+__anon24::nxt_idx	index1.c	/^	uint32_t *nxt_idx;  \/\/ 保存当前快中的nxt_idx数据；$/;"	m	struct:__anon24	file:	access:public
+__anon24::pos_buf	index1.c	/^	uint32_t *pos_buf;  \/\/ 保存当前快中的pos数据； 	$/;"	m	struct:__anon24	file:	access:public
+__anon24::relat	index1.c	/^	uint32_t *relat ;	$/;"	m	struct:__anon24	file:	access:public
+__anon24::seqL_buf	index1.c	/^	uint32_t (*seqL_buf)[2];  \/\/截取的数据缓冲区$/;"	m	struct:__anon24	file:	access:public
+__anon24::seqL_idxR	index1.c	/^	uint32_t (*seqL_idxR)[3];  \/\/ relat[]的每个行上左序列和右序列对应的idx,即(seqL,bgnIdxR,endIdxR)	$/;"	m	struct:__anon24	file:	access:public
+__anon24::seqR_buf	index1.c	/^	uint32_t (*seqR_buf)[2];$/;"	m	struct:__anon24	file:	access:public
+__anon24::smbwt	index1.c	/^	uint8_t  *smbwt  ;$/;"	m	struct:__anon24	file:	access:public
+__anon24::sortL	index1.c	/^	uint32_t *sortL; \/\/排序后的唯一序列$/;"	m	struct:__anon24	file:	access:public
+__anon24::sortR	index1.c	/^	uint32_t *sortR;$/;"	m	struct:__anon24	file:	access:public
+__anon25::idx	index.h	/^    uint32_t seq, idx;$/;"	m	struct:__anon25	access:public
+__anon25::seq	index.h	/^    uint32_t seq, idx;$/;"	m	struct:__anon25	access:public
+__anon26::bns	index.h	/^    bntseq_t *bns;$/;"	m	struct:__anon26	access:public
+__anon26::bwt	index.h	/^    bwt_t *bwt;\/*FM index*\/$/;"	m	struct:__anon26	access:public
+__anon26::fastmap	index.h	/^    lkt_t *fastmap;\/*fastmap 12bp seq*\/$/;"	m	struct:__anon26	access:public
+__anon26::is_multiseeds	index.h	/^    bp_t *is_multiseeds;\/*is_multiseeds[i] = 1 if Reference[sa[i]:sa[i]+20] is multi location seeds *\/$/;"	m	struct:__anon26	access:public
+__anon26::isa2seq16	index.h	/^    uint32_t* isa2seq16; \/* isa2seq16[i] = start of seq16s, i is occ of 1 in is_multiseeds before isa*\/$/;"	m	struct:__anon26	access:public
+__anon26::lext0	index.h	/^    ext_t *rext0, *lext0;$/;"	m	struct:__anon26	access:public
+__anon26::lext1	index.h	/^    uint32_t *lext1;$/;"	m	struct:__anon26	access:public
+__anon26::lext1_idx	index.h	/^    uint32_t *lext1_idx;$/;"	m	struct:__anon26	access:public
+__anon26::lext_idx	index.h	/^    uint32_t *lext_idx;$/;"	m	struct:__anon26	access:public
+__anon26::n_isa2seq16	index.h	/^    uint32_t n_isa2seq16;$/;"	m	struct:__anon26	access:public
+__anon26::n_lext0	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+__anon26::n_lext1	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+__anon26::n_pmap	index.h	/^    int n_pmap;$/;"	m	struct:__anon26	access:public
+__anon26::n_rext	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+__anon26::n_seq16s	index.h	/^    uint32_t n_seq16s;$/;"	m	struct:__anon26	access:public
+__anon26::n_tot	index.h	/^    int n_tot;$/;"	m	struct:__anon26	access:public
+__anon26::n_var	index.h	/^    int n_var;$/;"	m	struct:__anon26	access:public
+__anon26::pac	index.h	/^    uint8_t *pac;\/* packed reference seq *\/$/;"	m	struct:__anon26	access:public
+__anon26::pmap	index.h	/^    uint32_t *pmap;\/* preseq map *\/ $/;"	m	struct:__anon26	access:public
+__anon26::refseq	index.h	/^    uint8_t *refseq;\/*2bp refseq at variant site*\/$/;"	m	struct:__anon26	access:public
+__anon26::rext0	index.h	/^    ext_t *rext0, *lext0;$/;"	m	struct:__anon26	access:public
+__anon26::rext_idx	index.h	/^    uint32_t *rext_idx; $/;"	m	struct:__anon26	access:public
+__anon26::sai	index.h	/^    uint32_t *sai;\/* sa index *\/$/;"	m	struct:__anon26	access:public
+__anon26::seq16s	index.h	/^    uint32_t *seq16s;$/;"	m	struct:__anon26	access:public
+__anon27::n	test_aln.c	/^    int n;$/;"	m	struct:__anon27	file:	access:public
+__anon27::seq	test_aln.c	/^    uint8_t *seq;$/;"	m	struct:__anon27	file:	access:public
+__anon28::seed_intv	test_aln.c	/^    int seed_intv;\/\/seed extract interval $/;"	m	struct:__anon28	file:	access:public
+__anon28::trim_left	test_aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon28	file:	access:public
+__anon28::trim_right	test_aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon28	file:	access:public
+__anon29::k	test_aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+__anon29::k0	test_aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+__anon29::l	test_aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+__anon29::l0	test_aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+__anon29::l_aln	test_aln.c	/^    int l_aln;$/;"	m	struct:__anon29	file:	access:public
+__anon29::pos	test_aln.c	/^    uint32_t pos;$/;"	m	struct:__anon29	file:	access:public
+__anon29::preseq	test_aln.c	/^    uint8_t preseq[8];\/* variant preseq include 2bp variants *\/$/;"	m	struct:__anon29	file:	access:public
+__anon29::var	test_aln.c	/^    uint8_t var;$/;"	m	struct:__anon29	file:	access:public
+__anon2::depth	ksort.h	/^	int depth;$/;"	m	struct:__anon2	access:public
+__anon2::left	ksort.h	/^	void *left, *right;$/;"	m	struct:__anon2	access:public
+__anon2::right	ksort.h	/^	void *left, *right;$/;"	m	struct:__anon2	access:public
+__anon30::capidx	setFileName.h	/^	char (*capidx)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+__anon30::comfile	setFileName.h	/^	char (*comfile)[LEN_FILE_NAME] ;$/;"	m	struct:__anon30	access:public
+__anon30::extidx	setFileName.h	/^	char (*extidx)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+__anon30::jmpmod	setFileName.h	/^	char *jmpmod;$/;"	m	struct:__anon30	access:public
+__anon30::numidxfiles	setFileName.h	/^	int  numidxfiles;$/;"	m	struct:__anon30	access:public
+__anon30::nxtflg	setFileName.h	/^	char (*nxtflg)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+__anon30::nxtpnt	setFileName.h	/^	char (*nxtpnt)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+__anon30::relat	setFileName.h	/^	char (*relat)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+__anon30::seedidx	setFileName.h	/^	char (*seedidx)[LEN_FILE_NAME];$/;"	m	struct:__anon30	access:public
+__anon30::smbwt	setFileName.h	/^	char (*smbwt)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+__anon30::smpos	setFileName.h	/^	char (*smpos)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+__anon31::end	variants.h	/^    uint32_t end;\/\/variant len,eg: ins = 0, sub =1$/;"	m	struct:__anon31	access:public
+__anon31::orign	variants.h	/^    char* orign; $/;"	m	struct:__anon31	access:public
+__anon31::start	variants.h	/^    uint32_t start;\/\/pack reference pos$/;"	m	struct:__anon31	access:public
+__anon31::var	variants.h	/^    char* var;$/;"	m	struct:__anon31	access:public
+__anon31::varclass	variants.h	/^    char varclass;$/;"	m	struct:__anon31	access:public
+__anon32::len	variants.h	/^    uint32_t len;$/;"	m	struct:__anon32	access:public
+__anon32::name	variants.h	/^    char *name;$/;"	m	struct:__anon32	access:public
+__anon32::offset	variants.h	/^    uint32_t offset; $/;"	m	struct:__anon32	access:public
+__anon33::chromvar	variants.h	/^    chromvar_t *chromvar;$/;"	m	struct:__anon33	access:public
+__anon33::fp	variants.h	/^    FILE *fp;$/;"	m	struct:__anon33	access:public
+__anon33::h	variants.h	/^    khash_t(id) *h;\/\/rname to rid $/;"	m	struct:__anon33	access:public
+__anon33::n_chrom	variants.h	/^    uint32_t n_chrom;    $/;"	m	struct:__anon33	access:public
+__anon33::n_var	variants.h	/^    uint32_t n_var;   $/;"	m	struct:__anon33	access:public
+__anon33::var	variants.h	/^    var_t *var;$/;"	m	struct:__anon33	access:public
+__anon3::pos	aln.h	/^    uint32_t pos;$/;"	m	struct:__anon3	access:public
+__anon4::num_pos	buldSeedExtIdxs.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon4	file:	access:public
+__anon4::num_relat	buldSeedExtIdxs.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon4	file:	access:public
+__anon4::num_seqL	buldSeedExtIdxs.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon4	file:	access:public
+__anon4::num_seqR	buldSeedExtIdxs.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon4	file:	access:public
+__anon4::nxtcap	buldSeedExtIdxs.c	/^    uint32_t nxtcap;	$/;"	m	struct:__anon4	file:	access:public
+__anon4::relat	buldSeedExtIdxs.c	/^	uint32_t relat;	$/;"	m	struct:__anon4	file:	access:public
+__anon4::smbwt	buldSeedExtIdxs.c	/^	uint8_t  smbwt;$/;"	m	struct:__anon4	file:	access:public
+__anon5::L2rel	buldSeedExtIdxs.c	/^	uint32_t *L2rel ;$/;"	m	struct:__anon5	file:	access:public
+__anon5::bwt_seqL	buldSeedExtIdxs.c	/^	uint8_t  *bwt_seqL;   $/;"	m	struct:__anon5	file:	access:public
+__anon5::bwt_seqR	buldSeedExtIdxs.c	/^	uint8_t  *bwt_seqR;   $/;"	m	struct:__anon5	file:	access:public
+__anon5::bwt_sumL	buldSeedExtIdxs.c	/^	uint8_t  *bwt_sumL; $/;"	m	struct:__anon5	file:	access:public
+__anon5::bwt_sumR	buldSeedExtIdxs.c	/^	uint8_t  *bwt_sumR;$/;"	m	struct:__anon5	file:	access:public
+__anon5::cap	buldSeedExtIdxs.c	/^	CapInfo cap[1];$/;"	m	struct:__anon5	file:	access:public
+__anon5::extIdx	buldSeedExtIdxs.c	/^	uint32_t (*extIdx)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon5	file:	access:public
+__anon5::idxR	buldSeedExtIdxs.c	/^	uint32_t (*idxR)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_capidx	buldSeedExtIdxs.c	/^	uint32_t len_capidx ;  \/\/ 当前块前为止capidx数组中的全局capidx数据长度；$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_nxtflg	buldSeedExtIdxs.c	/^	uint32_t len_nxtflg ;  \/\/ 当前块前为止nxtflg数组中的全局flg数据长度；$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_nxtpnt	buldSeedExtIdxs.c	/^	uint32_t len_nxtpnt ;  \/\/ 当前块前为止nxtpnt数组中的全局nxtpnt数据长度；$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_relat	buldSeedExtIdxs.c	/^	uint32_t len_relat  ;  \/\/ 当前块前为止relat数组中的全局relat数据长度；	$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_smbwt	buldSeedExtIdxs.c	/^	uint32_t len_smbwt  ;  \/\/ 当前块前为止smbwt数组中的全局smbwt数据长度；	$/;"	m	struct:__anon5	file:	access:public
+__anon5::len_smpos	buldSeedExtIdxs.c	/^	uint32_t len_smpos  ;  \/\/ 当前块前为止smpos数组中的全局pos数据长度；$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtL	buldSeedExtIdxs.c	/^	uint32_t num_bwtL;$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtR	buldSeedExtIdxs.c	/^	uint32_t num_bwtR;$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtseqL	buldSeedExtIdxs.c	/^	uint8_t  num_bwtseqL;   $/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtseqR	buldSeedExtIdxs.c	/^	uint8_t  num_bwtseqR;   $/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtsumL	buldSeedExtIdxs.c	/^	uint8_t  num_bwtsumL; $/;"	m	struct:__anon5	file:	access:public
+__anon5::num_bwtsumR	buldSeedExtIdxs.c	/^	uint8_t  num_bwtsumR;$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_pos	buldSeedExtIdxs.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_relat	buldSeedExtIdxs.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_seqL	buldSeedExtIdxs.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon5	file:	access:public
+__anon5::num_seqR	buldSeedExtIdxs.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon5	file:	access:public
+__anon5::nxt_flg	buldSeedExtIdxs.c	/^	uint8_t  *nxt_flg;  \/\/ 保存当前快中的nxt_flg数据；$/;"	m	struct:__anon5	file:	access:public
+__anon5::nxt_idx	buldSeedExtIdxs.c	/^	uint32_t *nxt_idx;  \/\/ 保存当前快中的nxt_idx数据；$/;"	m	struct:__anon5	file:	access:public
+__anon5::pos_buf	buldSeedExtIdxs.c	/^	uint32_t *pos_buf;  \/\/ 保存当前快中的pos数据； 	$/;"	m	struct:__anon5	file:	access:public
+__anon5::relat	buldSeedExtIdxs.c	/^	uint32_t *relat ;	$/;"	m	struct:__anon5	file:	access:public
+__anon5::seqL_buf	buldSeedExtIdxs.c	/^	uint32_t (*seqL_buf)[2];  \/\/截取的数据缓冲区$/;"	m	struct:__anon5	file:	access:public
+__anon5::seqL_idxR	buldSeedExtIdxs.c	/^	uint32_t (*seqL_idxR)[3];  \/\/ relat[]的每个行上左序列和右序列对应的idx,即(seqL,bgnIdxR,endIdxR)	$/;"	m	struct:__anon5	file:	access:public
+__anon5::seqR_buf	buldSeedExtIdxs.c	/^	uint32_t (*seqR_buf)[2];$/;"	m	struct:__anon5	file:	access:public
+__anon5::smbwt	buldSeedExtIdxs.c	/^	uint8_t  *smbwt  ;$/;"	m	struct:__anon5	file:	access:public
+__anon5::sortL	buldSeedExtIdxs.c	/^	uint32_t *sortL; \/\/排序后的唯一序列$/;"	m	struct:__anon5	file:	access:public
+__anon5::sortR	buldSeedExtIdxs.c	/^	uint32_t *sortR;$/;"	m	struct:__anon5	file:	access:public
+__anon6::L2	bwt.h	/^	bwtint_t L2[5]; \/\/ C(), cumulative count$/;"	m	struct:__anon6	access:public
+__anon6::bwt	bwt.h	/^	uint32_t *bwt; \/\/ BWT$/;"	m	struct:__anon6	access:public
+__anon6::bwt_size	bwt.h	/^	bwtint_t bwt_size; \/\/ size of bwt, about seq_len\/4$/;"	m	struct:__anon6	access:public
+__anon6::cnt_table	bwt.h	/^	uint32_t cnt_table[256];$/;"	m	struct:__anon6	access:public
+__anon6::isa	bwt.h	/^    bwtint_t *isa;$/;"	m	struct:__anon6	access:public
+__anon6::n_sa	bwt.h	/^	bwtint_t n_sa;$/;"	m	struct:__anon6	access:public
+__anon6::primary	bwt.h	/^	bwtint_t primary; \/\/ S^{-1}(0), or the primary index of BWT$/;"	m	struct:__anon6	access:public
+__anon6::sa	bwt.h	/^	bwtint_t *sa;$/;"	m	struct:__anon6	access:public
+__anon6::sa_intv	bwt.h	/^	int sa_intv;$/;"	m	struct:__anon6	access:public
+__anon6::seq_len	bwt.h	/^	bwtint_t seq_len; \/\/ sequence length$/;"	m	struct:__anon6	access:public
+__anon7::bwtidx	query.h	/^    uint32_t bwtidx;$/;"	m	struct:__anon7	access:public
+__anon7::edit_distance	query.h	/^    uint32_t edit_distance;$/;"	m	struct:__anon7	access:public
+__anon7::extend_seed	query.h	/^    const char* extend_seed;$/;"	m	struct:__anon7	access:public
+__anon7::k	query.h	/^    uint32_t k, l;\/\/template seq bwt range$/;"	m	struct:__anon7	access:public
+__anon7::l	query.h	/^    uint32_t k, l;\/\/template seq bwt range$/;"	m	struct:__anon7	access:public
+__anon7::l_aln	query.h	/^    uint32_t l_aln;\/\/non-variant align length$/;"	m	struct:__anon7	access:public
+__anon7::pos	query.h	/^    uint32_t pos;$/;"	m	struct:__anon7	access:public
+__anon7::template_seq	query.h	/^    kstring_t template_seq;$/;"	m	struct:__anon7	access:public
+__anon7::var_preseq	query.h	/^    const char* var_preseq;\/\/pre seq$/;"	m	struct:__anon7	access:public
+__anon7::vs_idx	query.h	/^    uint32_t vs_idx;\/\/variant_seq idx$/;"	m	struct:__anon7	access:public
+__anon8::l	query.h	/^    int l;\/\/seed length$/;"	m	struct:__anon8	access:public
+__anon8::n	query.h	/^    int n;$/;"	m	struct:__anon8	access:public
+__anon8::offset	query.h	/^    int offset;\/\/seed start pos on read$/;"	m	struct:__anon8	access:public
+__anon8::pos	query.h	/^    uint32_t pos;\/\/reference position$/;"	m	struct:__anon8	access:public
+__anon8::ts	query.h	/^    template_seed_t *ts;$/;"	m	struct:__anon8	access:public
+__anon9::cigar	query.h	/^    char *cigar;$/;"	m	struct:__anon9	access:public
+__anon9::pos	query.h	/^    uint32_t pos;$/;"	m	struct:__anon9	access:public
+__cmp	bitmap.c	/^static inline int __cmp(const void *x, const void* y)$/;"	f	file:	signature:(const void *x, const void* y)
+__get_bwt	buldSeedExtIdxs.c	32;"	d	file:
+__get_bwt	index1.c	53;"	d	file:
+__get_bwt	index2.c	497;"	d	file:
+__get_bwt2	index1.c	55;"	d	file:
+__get_col	index1.c	58;"	d	file:
+__get_pac	bntseq.h	66;"	d
+__get_seq16	bntseq.h	68;"	d
+__kstring_t	kseq.h	/^typedef struct __kstring_t {$/;"	s
+__kstring_t	kstring.h	/^typedef struct __kstring_t {$/;"	s
+__kstring_t::l	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::l	kstring.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::m	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::m	kstring.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::s	kseq.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::s	kstring.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+__occ_aux	bwt.c	/^static inline int __occ_aux(uint64_t y, int c)$/;"	f	file:	signature:(uint64_t y, int c)
+__occ_aux4	bwt.c	167;"	d	file:
+__set_bwt	buldSeedExtIdxs.c	31;"	d	file:
+__set_bwt	index1.c	52;"	d	file:
+__set_bwt	index2.c	496;"	d	file:
+__set_bwt2	index1.c	54;"	d	file:
+__set_pac	bntseq.h	65;"	d
+__set_seq16	bntseq.h	67;"	d
+__sort_lt_ext	buldSeedExtIdxs.c	36;"	d	file:
+__sort_lt_ext	index1.c	44;"	d	file:
+__sort_lt_ext	index2.c	44;"	d	file:
+__sort_lt_ext	test_index.c	44;"	d	file:
+_err_fatal_simple	utils.c	/^void _err_fatal_simple(const char *func, const char *msg)$/;"	f	signature:(const char *func, const char *msg)
+_err_fatal_simple_core	utils.c	/^void _err_fatal_simple_core(const char *func, const char *msg)$/;"	f	signature:(const char *func, const char *msg)
+_get_pac	bntseq.c	185;"	d	file:
+_get_pac	lookup.c	26;"	d	file:
+_set_pac	bntseq.c	184;"	d	file:
+_set_pac	lookup.c	25;"	d	file:
+a	bitmap.h	/^    uint32_t *a;\/\/n_a = m*(sizeof(uint32_t))$/;"	m	struct:__anon1	access:public
+a	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+a	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+accumulate_cnt	aln.c	/^static inline void accumulate_cnt(int n, uint8_t *cnt_2nt)$/;"	f	file:	signature:(int n, uint8_t *cnt_2nt)
+accumulate_cnt	index1.c	/^static inline void accumulate_cnt(int n, int *cnt_2nt)$/;"	f	file:	signature:(int n, int *cnt_2nt)
+accumulate_cnt	index2.c	/^static inline void accumulate_cnt(int n, int *cnt_2nt)$/;"	f	file:	signature:(int n, int *cnt_2nt)
+add1	bntseq.c	/^static uint8_t *add1(const kseq_t *seq, bntseq_t *bns, uint8_t *pac, int64_t *m_pac, int *m_seqs, int *m_holes, bntamb1_t **q)$/;"	f	file:	signature:(const kseq_t *seq, bntseq_t *bns, uint8_t *pac, int64_t *m_pac, int *m_seqs, int *m_holes, bntamb1_t **q)
+align_128	aln.c	/^void align_128(uint8_t *bwt, uint8_t seq_2nt[8], int seq_st, uint8_t cnt_2nt[][17], int n_data)$/;"	f	signature:(uint8_t *bwt, uint8_t seq_2nt[8], int seq_st, uint8_t cnt_2nt[][17], int n_data)
+all_var_t	variants.h	/^} all_var_t;$/;"	t	typeref:struct:__anon33
+aln_main	aln.c	/^int aln_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+aln_main	test_aln.c	/^int aln_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+aln_t	aln.h	/^} aln_t;$/;"	t	typeref:struct:__anon3
+aln_t	query.h	/^} aln_t;$/;"	t	typeref:struct:__anon9
+aln_usage	aln.c	/^static int aln_usage()$/;"	f	file:
+aln_usage	test_aln.c	/^static int aln_usage()$/;"	f	file:
+aln_vec_t	aln.c	/^typedef kvec_t(aln_t) aln_vec_t;$/;"	t	file:
+aln_vec_t	test_aln.c	/^typedef kvec_t(aln_t) aln_vec_t;$/;"	t	file:
+alnse	aln.c	/^int alnse(idx_t *idx, query_t *q, aux_t *aux)$/;"	f	signature:(idx_t *idx, query_t *q, aux_t *aux)
+alnse	test_aln.c	/^int alnse(idx_t *idx, query_t *q, aux_t *aux)$/;"	f	signature:(idx_t *idx, query_t *q, aux_t *aux)
+alt	query.h	/^    aln_t *alt;\/\/alternative alignments$/;"	m	struct:__anon10	access:public
+amb	bntseq.h	/^	char amb;$/;"	m	struct:__anon21	access:public
+ambs	bntseq.h	/^	bntamb1_t *ambs; \/\/ n_holes elements$/;"	m	struct:__anon22	access:public
+anno	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon20	access:public
+anns	bntseq.h	/^	bntann1_t *anns; \/\/ n_seqs elements$/;"	m	struct:__anon22	access:public
+aux_t	aln.c	/^} aux_t;$/;"	t	typeref:struct:__anon13	file:
+aux_t	test_aln.c	/^} aux_t;$/;"	t	typeref:struct:__anon28	file:
+availableWord	bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+average	bwt_gen.h	50;"	d
+bns	index.h	/^    bntseq_t *bns;$/;"	m	struct:__anon26	access:public
+bns_coor_pac2real	bntseq.c	/^int bns_coor_pac2real(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)$/;"	f	signature:(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)
+bns_coor_pac2real	bntseq.h	/^int bns_coor_pac2real(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq);$/;"	p	signature:(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)
+bns_destroy	bntseq.c	/^void bns_destroy(bntseq_t *bns)$/;"	f	signature:(bntseq_t *bns)
+bns_destroy	bntseq.h	/^void bns_destroy(bntseq_t *bns);$/;"	p	signature:(bntseq_t *bns)
+bns_dump	bntseq.c	/^void bns_dump(const bntseq_t *bns, const char *prefix)$/;"	f	signature:(const bntseq_t *bns, const char *prefix)
+bns_dump	bntseq.h	/^void bns_dump(const bntseq_t *bns, const char *prefix);$/;"	p	signature:(const bntseq_t *bns, const char *prefix)
+bns_extract_seq16	bntseq.c	/^uint32_t bns_extract_seq16(uint8_t *pac, uint32_t start, uint32_t end)$/;"	f	signature:(uint8_t *pac, uint32_t start, uint32_t end)
+bns_extract_seq16	bntseq.h	/^uint32_t bns_extract_seq16(uint8_t *pac, uint32_t start, uint32_t end);$/;"	p	signature:(uint8_t *pac, uint32_t start, uint32_t end)
+bns_fasta2bntseq	bntseq.c	/^uint32_t bns_fasta2bntseq(gzFile fp_fa, const char *prefix)$/;"	f	signature:(gzFile fp_fa, const char *prefix)
+bns_fasta2bntseq	bntseq.h	/^uint32_t bns_fasta2bntseq(gzFile fp_fa, const char *prefix);$/;"	p	signature:(gzFile fp_fa, const char *prefix)
+bns_restore	bntseq.c	/^bntseq_t *bns_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+bns_restore	bntseq.h	/^bntseq_t *bns_restore(const char *prefix);$/;"	p	signature:(const char *prefix)
+bns_restore_core	bntseq.c	/^bntseq_t *bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename)$/;"	f	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bns_restore_core	bntseq.h	/^bntseq_t *bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename);$/;"	p	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bntamb1_t	bntseq.h	/^} bntamb1_t;$/;"	t	typeref:struct:__anon21
+bntann1_t	bntseq.h	/^} bntann1_t;$/;"	t	typeref:struct:__anon20
+bntseq_t	bntseq.h	/^} bntseq_t;$/;"	t	typeref:struct:__anon22
+bp_destroy	bitmap.c	/^void bp_destroy ( bp_t *bp )$/;"	f	signature:( bp_t *bp )
+bp_destroy	bitmap.h	/^void bp_destroy ( bp_t *bp );$/;"	p	signature:( bp_t *bp )
+bp_dump	bitmap.c	/^void bp_dump(bp_t *bp, const char *fn)$/;"	f	signature:(bp_t *bp, const char *fn)
+bp_dump	bitmap.h	/^void bp_dump(bp_t *bp, const char *fn);$/;"	p	signature:(bp_t *bp, const char *fn)
+bp_gen_occ	bitmap.c	/^void bp_gen_occ ( bp_t* bp)$/;"	f	signature:( bp_t* bp)
+bp_gen_occ	bitmap.h	/^void bp_gen_occ ( bp_t* bp);$/;"	p	signature:( bp_t* bp)
+bp_get	bitmap.c	/^int bp_get(bp_t *bp, size_t i)$/;"	f	signature:(bp_t *bp, size_t i)
+bp_get	bitmap.h	/^int bp_get(bp_t *bp, size_t i);$/;"	p	signature:(bp_t *bp, size_t i)
+bp_init	bitmap.c	/^bp_t *bp_init (size_t l)$/;"	f	signature:(size_t l)
+bp_init	bitmap.h	/^bp_t *bp_init (size_t l);$/;"	p	signature:(size_t l)
+bp_rank	bitmap.c	/^uint32_t bp_rank(bp_t *bp, size_t i)$/;"	f	signature:(bp_t *bp, size_t i)
+bp_rank	bitmap.h	/^uint32_t bp_rank(bp_t *bp, size_t i);$/;"	p	signature:(bp_t *bp, size_t i)
+bp_reset	bitmap.c	/^void bp_reset(bp_t *bp)$/;"	f	signature:(bp_t *bp)
+bp_reset	bitmap.h	/^void bp_reset(bp_t *bp);$/;"	p	signature:(bp_t *bp)
+bp_restore	bitmap.c	/^bp_t *bp_restore(const char *fn, int restore_occ)$/;"	f	signature:(const char *fn, int restore_occ)
+bp_restore	bitmap.h	/^bp_t *bp_restore(const char *fn, int restore_occ);$/;"	p	signature:(const char *fn, int restore_occ)
+bp_set0	bitmap.c	/^int bp_set0(bp_t *bp, size_t i)$/;"	f	signature:(bp_t *bp, size_t i)
+bp_set0	bitmap.h	/^int bp_set0(bp_t *bp, size_t i);$/;"	p	signature:(bp_t *bp, size_t i)
+bp_set1	bitmap.c	/^int bp_set1(bp_t *bp, size_t i)$/;"	f	signature:(bp_t *bp, size_t i)
+bp_set1	bitmap.h	/^int bp_set1(bp_t *bp, size_t i);$/;"	p	signature:(bp_t *bp, size_t i)
+bp_t	bitmap.h	/^} bp_t;$/;"	t	typeref:struct:__anon1
+bs_iter_t	bsearch.h	23;"	d
+bs_val_t	bsearch.h	24;"	d
+bttoseq16	aln.c	/^uint32_t bttoseq16(const int l_seq, const uint8_t *seq)$/;"	f	signature:(const int l_seq, const uint8_t *seq)
+bttoseq16	test_aln.c	/^uint32_t bttoseq16(const int l_seq, const uint8_t *seq)$/;"	f	signature:(const int l_seq, const uint8_t *seq)
+buildSize	bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+build_bwt_is_repeat	index1.c	/^void build_bwt_is_repeat ( const char *prefix, const idx_t *idx, const uint8_t *pac)$/;"	f	signature:( const char *prefix, const idx_t *idx, const uint8_t *pac)
+build_bwt_is_repeat	index2.c	/^void build_bwt_is_repeat ( const bwt_t *bwt, const uint8_t *pac, uint8_t* ref_is_repeat, uint8_t *bwt_is_repeat[])$/;"	f	signature:( const bwt_t *bwt, const uint8_t *pac, uint8_t* ref_is_repeat, uint8_t *bwt_is_repeat[])
+build_bwt_is_repeat_old	index1.c	/^void build_bwt_is_repeat_old( const char *prefix, const bwt_t *bwt, const uint8_t *pac, uint8_t* ref_is_repeat, uint8_t *bwt_is_repeat[])$/;"	f	signature:( const char *prefix, const bwt_t *bwt, const uint8_t *pac, uint8_t* ref_is_repeat, uint8_t *bwt_is_repeat[])
+build_extend_idx	index1.c	/^void build_extend_idx(const char *prefix)$/;"	f	signature:(const char *prefix)
+build_extend_idx	index2.c	/^void build_extend_idx(const char *prefix)$/;"	f	signature:(const char *prefix)
+build_extend_idx_alt	index1.c	/^void build_extend_idx_alt(const char *prefix)$/;"	f	signature:(const char *prefix)
+build_extend_idx_alt	index2.c	/^void build_extend_idx_alt(const char *prefix)$/;"	f	signature:(const char *prefix)
+build_fmidx	index1.c	/^void build_fmidx(const char *fn_fa, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *prefix)
+build_fmidx	index2.c	/^void build_fmidx(const char *fn_fa, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *prefix)
+build_local_bwt	buldSeedExtIdxs.c	/^void build_local_bwt(uint32_t *sort_seq, int l, int r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt)$/;"	f	signature:(uint32_t *sort_seq, int l, int r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt)
+build_local_bwt	index1.c	/^void build_local_bwt(ext_t *lext, uint32_t l, uint32_t r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt[])$/;"	f	signature:(ext_t *lext, uint32_t l, uint32_t r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt[])
+build_local_bwt	index2.c	/^void build_local_bwt(ext_t *lext, uint32_t l, uint32_t r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt[])$/;"	f	signature:(ext_t *lext, uint32_t l, uint32_t r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt[])
+build_local_bwt_alt	index1.c	/^void build_local_bwt_alt(uint32_t *sort_seq, int l, int r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt)$/;"	f	signature:(uint32_t *sort_seq, int l, int r, uint32_t *sa0, uint32_t *sa1, uint8_t *bwt)
+build_occ	index1.c	/^void build_occ(uint8_t *bwt[], int n_lseqs)$/;"	f	signature:(uint8_t *bwt[], int n_lseqs)
+build_occ	index2.c	/^void build_occ(uint8_t *bwt[], int n_lseqs)$/;"	f	signature:(uint8_t *bwt[], int n_lseqs)
+build_seq16_bwt	buldSeedExtIdxs.c	/^uint8_t *build_seq16_bwt (int n, uint32_t *sort_seq)$/;"	f	signature:(int n, uint32_t *sort_seq)
+build_seq16_bwt	index1.c	/^void build_seq16_bwt (const char*prefix)$/;"	f	signature:(const char*prefix)
+build_seq16_bwt	index2.c	/^void build_seq16_bwt (const char*prefix)$/;"	f	signature:(const char*prefix)
+build_seq16_bwt_alt	index1.c	/^uint8_t *build_seq16_bwt_alt(int n, uint32_t *sort_seq)$/;"	f	signature:(int n, uint32_t *sort_seq)
+build_smbwt_idx	buldSeedExtIdxs.c	/^int build_smbwt_idx(idx_t *idx){$/;"	f	signature:(idx_t *idx)
+build_smbwt_idx	index1.c	/^int build_smbwt_idx(idx_t *fm_idx){$/;"	f	signature:(idx_t *fm_idx)
+build_snpaware_idx	index1.c	/^void build_snpaware_idx(const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_av, const char *prefix)
+build_snpaware_idx	index2.c	/^void build_snpaware_idx(const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_av, const char *prefix)
+build_struct_idx	index1.c	/^void build_struct_idx(uint8_t *bwt_is_repeat, bwt_t *bwt, int ext_i, const char*prefix)$/;"	f	signature:(uint8_t *bwt_is_repeat, bwt_t *bwt, int ext_i, const char*prefix)
+buldSmBwt	buldSeedExtIdxs.c	/^void buldSmBwt(SubBuf *sub,int flg);$/;"	p	file:	signature:(SubBuf *sub,int flg)
+buldSmBwt	buldSeedExtIdxs.c	/^void buldSmBwt(SubBuf *sub,int flg){$/;"	f	signature:(SubBuf *sub,int flg)
+buldSmBwt	index1.c	/^void buldSmBwt(SubBuf *sub,int flg);$/;"	p	file:	signature:(SubBuf *sub,int flg)
+buldSmBwt	index1.c	/^void buldSmBwt(SubBuf *sub,int flg){$/;"	f	signature:(SubBuf *sub,int flg)
+bwa_bwt2sa	bwtmisc.c	/^int bwa_bwt2sa(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_bwtupdate	bwtmisc.c	/^int bwa_bwtupdate(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_fa2pac	bntseq.c	/^int bwa_fa2pac(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_pac2bwt	bwtmisc.c	/^int bwa_pac2bwt(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_pac2cspac	bwtmisc.c	/^int bwa_pac2cspac(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_pac2cspac_core	bwtmisc.c	/^uint8_t *bwa_pac2cspac_core(const bntseq_t *bns)$/;"	f	signature:(const bntseq_t *bns)
+bwa_pac_rev	bwtmisc.c	/^int bwa_pac_rev(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwa_pac_rev_core	bwtmisc.c	/^void bwa_pac_rev_core(const char *fn, const char *fn_rev)$/;"	f	signature:(const char *fn, const char *fn_rev)
+bwa_seq_len	bwtmisc.c	/^int64_t bwa_seq_len(const char *fn_pac)$/;"	f	signature:(const char *fn_pac)
+bwt	bwt.h	/^	uint32_t *bwt; \/\/ BWT$/;"	m	struct:__anon6	access:public
+bwt	bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+bwt	index.h	/^    bwt_t *bwt;\/*FM index*\/$/;"	m	struct:__anon26	access:public
+bwtCode	bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+bwtSizeInWord	bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+bwt_2occ	bwt.c	/^void bwt_2occ(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)
+bwt_2occ	bwt.h	/^	void bwt_2occ(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)
+bwt_2occ4	bwt.c	/^static inline void bwt_2occ4(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])$/;"	f	file:	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])
+bwt_2occ4	bwt.h	/^	static inline void bwt_2occ4(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4]);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])
+bwt_B0	bwt.h	67;"	d
+bwt_B00	bwtmisc.c	119;"	d	file:
+bwt_bwt	bwt.h	62;"	d
+bwt_bwtgen	bwt.h	/^	void bwt_bwtgen(const char *fn_pac, const char *fn_bwt); \/\/ from BWT-SW$/;"	p	signature:(const char *fn_pac, const char *fn_bwt)
+bwt_bwtgen	bwt_gen.c	/^void bwt_bwtgen(const char *fn_pac, const char *fn_bwt)$/;"	f	signature:(const char *fn_pac, const char *fn_bwt)
+bwt_bwtgen_main	bwt_gen.c	/^int bwt_bwtgen_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwt_bwtupdate_core	bwt.h	/^	void bwt_bwtupdate_core(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_bwtupdate_core	bwtmisc.c	/^void bwt_bwtupdate_core(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_cal_isa	bwt.c	/^void bwt_cal_isa(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_cal_isa	bwt.h	/^	void bwt_cal_isa(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_cal_sa	bwt.c	/^void bwt_cal_sa(bwt_t *bwt, int intv)$/;"	f	signature:(bwt_t *bwt, int intv)
+bwt_cal_sa	bwt.h	/^	void bwt_cal_sa(bwt_t *bwt, int intv);$/;"	p	signature:(bwt_t *bwt, int intv)
+bwt_destroy	bwt.h	/^	void bwt_destroy(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_destroy	bwtio.c	/^void bwt_destroy(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_dump_bwt	bwt.h	/^	void bwt_dump_bwt(const char *fn, const bwt_t *bwt);$/;"	p	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_bwt	bwtio.c	/^void bwt_dump_bwt(const char *fn, const bwt_t *bwt)$/;"	f	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_isa	bwt.h	/^    void bwt_dump_isa(const char *fn, const bwt_t *bwt);$/;"	p	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_isa	bwtio.c	/^void bwt_dump_isa(const char *fn, const bwt_t *bwt)$/;"	f	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_sa	bwt.h	/^	void bwt_dump_sa(const char *fn, const bwt_t *bwt);$/;"	p	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_sa	bwtio.c	/^void bwt_dump_sa(const char *fn, const bwt_t *bwt)$/;"	f	signature:(const char *fn, const bwt_t *bwt)
+bwt_gen_cnt_table	bwt.c	/^void bwt_gen_cnt_table(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_gen_cnt_table	bwt.h	/^	void bwt_gen_cnt_table(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_invPsi	bwt.h	72;"	d
+bwt_match_exact	bwt.c	/^int bwt_match_exact(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)$/;"	f	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)
+bwt_match_exact	bwt.h	/^	int bwt_match_exact(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end);$/;"	p	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)
+bwt_match_exact_alt	bwt.c	/^int bwt_match_exact_alt(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)$/;"	f	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)
+bwt_match_exact_alt	bwt.h	/^	int bwt_match_exact_alt(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0);$/;"	p	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)
+bwt_occ	bwt.c	/^bwtint_t bwt_occ(const bwt_t *bwt, bwtint_t k, ubyte_t c)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, ubyte_t c)
+bwt_occ	bwt.h	/^	bwtint_t bwt_occ(const bwt_t *bwt, bwtint_t k, ubyte_t c);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, ubyte_t c)
+bwt_occ4	bwt.c	/^static inline void bwt_occ4(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])$/;"	f	file:	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])
+bwt_occ4	bwt.h	/^	static inline void bwt_occ4(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4]);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])
+bwt_occ_intv	bwt.h	69;"	d
+bwt_pac2bwt	bwtmisc.c	/^bwt_t *bwt_pac2bwt(const char *fn_pac, int use_is)$/;"	f	signature:(const char *fn_pac, int use_is)
+bwt_restore_bwt	bwt.h	/^        bwt_t *bwt_restore_bwt(const char *fn);$/;"	p	signature:(const char *fn)
+bwt_restore_bwt	bwtio.c	/^bwt_t *bwt_restore_bwt(const char *fn)$/;"	f	signature:(const char *fn)
+bwt_restore_isa	bwt.h	/^	void bwt_restore_isa(const char *fn, bwt_t *bwt);$/;"	p	signature:(const char *fn, bwt_t *bwt)
+bwt_restore_isa	bwtio.c	/^void bwt_restore_isa(const char *fn, bwt_t *bwt)$/;"	f	signature:(const char *fn, bwt_t *bwt)
+bwt_restore_sa	bwt.h	/^	void bwt_restore_sa(const char *fn, bwt_t *bwt);$/;"	p	signature:(const char *fn, bwt_t *bwt)
+bwt_restore_sa	bwtio.c	/^void bwt_restore_sa(const char *fn, bwt_t *bwt)$/;"	f	signature:(const char *fn, bwt_t *bwt)
+bwt_sa	bwt.c	/^bwtint_t bwt_sa(const bwt_t *bwt, bwtint_t k)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k)
+bwt_sa	bwt.h	/^	bwtint_t bwt_sa(const bwt_t *bwt, bwtint_t k);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k)
+bwt_seqL	buldSeedExtIdxs.c	/^	uint8_t  *bwt_seqL;   $/;"	m	struct:__anon5	file:	access:public
+bwt_seqL	index1.c	/^	uint8_t  *bwt_seqL;   $/;"	m	struct:__anon24	file:	access:public
+bwt_seqR	buldSeedExtIdxs.c	/^	uint8_t  *bwt_seqR;   $/;"	m	struct:__anon5	file:	access:public
+bwt_seqR	index1.c	/^	uint8_t  *bwt_seqR;   $/;"	m	struct:__anon24	file:	access:public
+bwt_size	bwt.h	/^	bwtint_t bwt_size; \/\/ size of bwt, about seq_len\/4$/;"	m	struct:__anon6	access:public
+bwt_sumL	buldSeedExtIdxs.c	/^	uint8_t  *bwt_sumL; $/;"	m	struct:__anon5	file:	access:public
+bwt_sumL	index1.c	/^	uint8_t  *bwt_sumL; $/;"	m	struct:__anon24	file:	access:public
+bwt_sumR	buldSeedExtIdxs.c	/^	uint8_t  *bwt_sumR;$/;"	m	struct:__anon5	file:	access:public
+bwt_sumR	index1.c	/^	uint8_t  *bwt_sumR;$/;"	m	struct:__anon24	file:	access:public
+bwt_t	bwt.h	/^} bwt_t;$/;"	t	typeref:struct:__anon6
+bwtidx	query.h	/^    uint32_t bwtidx;$/;"	m	struct:__anon7	access:public
+bwtint_t	bwt.h	/^typedef uint32_t bwtint_t;$/;"	t
+calloc	malloc_wrap.h	26;"	d
+calloc	malloc_wrap.h	28;"	d
+cap	buldSeedExtIdxs.c	/^	CapInfo cap[1];$/;"	m	struct:__anon5	file:	access:public
+cap	index1.c	/^	CapInfo cap[1];$/;"	m	struct:__anon24	file:	access:public
+capidx	setFileName.h	/^	char (*capidx)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+cat_filename	index1.c	/^static void cat_filename(char *str, const char *prefix, const char *suffix)$/;"	f	file:	signature:(char *str, const char *prefix, const char *suffix)
+cat_filename	index2.c	/^static void cat_filename(char *str, const char *prefix, const char *suffix)$/;"	f	file:	signature:(char *str, const char *prefix, const char *suffix)
+ceilLog2	bwt_gen.c	/^static unsigned int ceilLog2(const unsigned int input)$/;"	f	file:	signature:(const unsigned int input)
+chr	is.c	30;"	d	file:
+chromvar	variants.h	/^    chromvar_t *chromvar;$/;"	m	struct:__anon33	access:public
+chromvar_t	variants.h	/^} chromvar_t;$/;"	t	typeref:struct:__anon32
+cigar	query.h	/^    char *cigar;$/;"	m	struct:__anon10	access:public
+cigar	query.h	/^    char *cigar;$/;"	m	struct:__anon9	access:public
+cigar_t	query.h	24;"	d
+cnt_table	bwt.h	/^	uint32_t cnt_table[256];$/;"	m	struct:__anon6	access:public
+comFile	buldSeedExtIdxs.c	/^void comFile(FileName *rf, FileName *wf);$/;"	p	file:	signature:(FileName *rf, FileName *wf)
+comFile	buldSeedExtIdxs.c	/^void comFile(FileName *rf, FileName *wf){$/;"	f	signature:(FileName *rf, FileName *wf)
+comFile	index1.c	/^void comFile(FileName *rf, FileName *wf);$/;"	p	file:	signature:(FileName *rf, FileName *wf)
+comFile	index1.c	/^void comFile(FileName *rf, FileName *wf){$/;"	f	signature:(FileName *rf, FileName *wf)
+comfile	setFileName.h	/^	char (*comfile)[LEN_FILE_NAME] ;$/;"	m	struct:__anon30	access:public
+comment	query.h	/^    char *name, *comment;$/;"	m	struct:__anon10	access:public
+count_bwt	aln.c	/^int count_bwt(uint8_t *bwt, int k, int l, uint8_t nt2)$/;"	f	signature:(uint8_t *bwt, int k, int l, uint8_t nt2)
+cputime	utils.c	/^double cputime()$/;"	f
+cputime	utils.h	/^	double cputime();$/;"	p	signature:()
+create_jmpmod	index1.c	/^void create_jmpmod(const char*prefix, bwt_t *bwt, int ext_i, uint32_t *jump_idx, uint8_t *mod_idx, uint32_t *cap_pos) $/;"	f	signature:(const char*prefix, bwt_t *bwt, int ext_i, uint32_t *jump_idx, uint8_t *mod_idx, uint32_t *cap_pos)
+cumulativeCountInCurrentBuild	bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+cumulativeFreq	bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+cut_ext_seq	index.c	/^int cut_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)
+cut_ext_seq	index1.c	/^int cut_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)
+cut_ext_seq	index2.c	/^int cut_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)
+cut_ext_seq	test_index.c	/^int cut_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, vec_uint_t *seq_buf)
+cut_ext_seq0	index1.c	/^int cut_ext_seq0(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, uint32_t sort_flag[])$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, uint32_t sort_flag[])
+cut_ext_seq1	index1.c	/^int cut_ext_seq1(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, uint32_t sort_flag[])$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, int offset, uint32_t sort_flag[])
+decodeTable	bwt_gen.h	/^	unsigned int *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+decodeTableGenerated	bwt_gen.h	/^	unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+depth	ksort.h	/^	int depth;$/;"	m	struct:__anon2	access:public
+dump_cnt	index1.c	/^static void dump_cnt(FILE *fp, int tot_lext0, int tot_lext1, int tot_rext)$/;"	f	file:	signature:(FILE *fp, int tot_lext0, int tot_lext1, int tot_rext)
+dump_cnt	index2.c	/^static void dump_cnt(FILE *fp, int tot_lext0, int tot_lext1, int tot_rext)$/;"	f	file:	signature:(FILE *fp, int tot_lext0, int tot_lext1, int tot_rext)
+edit_distance	query.h	/^    uint32_t edit_distance;$/;"	m	struct:__anon7	access:public
+end	variants.h	/^    uint32_t end;\/\/variant len,eg: ins = 0, sub =1$/;"	m	struct:__anon31	access:public
+endSaIndex	bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+err_fatal	utils.c	/^void err_fatal(const char *header, const char *fmt, ...)$/;"	f	signature:(const char *header, const char *fmt, ...)
+err_fatal_core	utils.c	/^void err_fatal_core(const char *header, const char *fmt, ...)$/;"	f	signature:(const char *header, const char *fmt, ...)
+err_fatal_simple	utils.h	55;"	d
+err_fatal_simple_core	utils.h	56;"	d
+err_fclose	utils.c	/^int err_fclose(FILE *stream) $/;"	f	signature:(FILE *stream)
+err_fclose	utils.h	/^	int err_fclose(FILE *stream);$/;"	p	signature:(FILE *stream)
+err_fflush	utils.c	/^int err_fflush(FILE *stream) $/;"	f	signature:(FILE *stream)
+err_fflush	utils.h	/^	int err_fflush(FILE *stream);$/;"	p	signature:(FILE *stream)
+err_fprintf	utils.c	/^int err_fprintf(FILE *stream, const char *format, ...) $/;"	f	signature:(FILE *stream, const char *format, ...)
+err_fputc	utils.c	/^int err_fputc(int c, FILE *stream)$/;"	f	signature:(int c, FILE *stream)
+err_fputc	utils.h	/^	int err_fputc(int c, FILE *stream);$/;"	p	signature:(int c, FILE *stream)
+err_fputs	utils.c	/^int err_fputs(const char *s, FILE *stream)$/;"	f	signature:(const char *s, FILE *stream)
+err_fputs	utils.h	/^	int err_fputs(const char *s, FILE *stream);$/;"	p	signature:(const char *s, FILE *stream)
+err_fread_noeof	utils.c	/^size_t err_fread_noeof(void *ptr, size_t size, size_t nmemb, FILE *stream)$/;"	f	signature:(void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_fread_noeof	utils.h	/^	size_t err_fread_noeof(void *ptr, size_t size, size_t nmemb, FILE *stream);$/;"	p	signature:(void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_fseek	utils.c	/^int err_fseek(FILE *stream, long offset, int whence)$/;"	f	signature:(FILE *stream, long offset, int whence)
+err_fseek	utils.h	/^	int err_fseek(FILE *stream, long offset, int whence);$/;"	p	signature:(FILE *stream, long offset, int whence)
+err_ftell	utils.c	/^long err_ftell(FILE *stream)$/;"	f	signature:(FILE *stream)
+err_ftell	utils.h	/^	long err_ftell(FILE *stream);$/;"	p	signature:(FILE *stream)
+err_fwrite	utils.c	/^size_t err_fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)$/;"	f	signature:(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_fwrite	utils.h	/^    size_t err_fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);$/;"	p	signature:(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_gzclose	utils.c	/^int err_gzclose(gzFile file)$/;"	f	signature:(gzFile file)
+err_gzclose	utils.h	/^	int err_gzclose(gzFile file);$/;"	p	signature:(gzFile file)
+err_gzread	utils.c	/^int err_gzread(gzFile file, void *ptr, unsigned int len)$/;"	f	signature:(gzFile file, void *ptr, unsigned int len)
+err_gzread	utils.h	/^	int err_gzread(gzFile file, void *ptr, unsigned int len);$/;"	p	signature:(gzFile file, void *ptr, unsigned int len)
+err_printf	utils.c	/^int err_printf(const char *format, ...) $/;"	f	signature:(const char *format, ...)
+err_putchar	utils.h	94;"	d
+err_puts	utils.h	96;"	d
+err_rewind	utils.h	87;"	d
+err_xopen_core	utils.h	/^	FILE *err_xopen_core(const char *func, const char *fn, const char *mode);$/;"	p	signature:(const char *func, const char *fn, const char *mode)
+err_xreopen_core	utils.c	/^FILE *err_xreopen_core(const char *func, const char *fn, const char *mode, FILE *fp)$/;"	f	signature:(const char *func, const char *fn, const char *mode, FILE *fp)
+err_xreopen_core	utils.h	/^	FILE *err_xreopen_core(const char *func, const char *fn, const char *mode, FILE *fp);$/;"	p	signature:(const char *func, const char *fn, const char *mode, FILE *fp)
+err_xzopen_core	utils.c	/^gzFile err_xzopen_core(const char *func, const char *fn, const char *mode)$/;"	f	signature:(const char *func, const char *fn, const char *mode)
+err_xzopen_core	utils.h	/^	gzFile err_xzopen_core(const char *func, const char *fn, const char *mode);$/;"	p	signature:(const char *func, const char *fn, const char *mode)
+extIdx	buldSeedExtIdxs.c	/^	uint32_t (*extIdx)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon5	file:	access:public
+extIdx	index1.c	/^	uint32_t (*extIdx)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon24	file:	access:public
+ext_t	index.h	/^} ext_t;$/;"	t	typeref:struct:__anon25
+extend_seed	query.h	/^    const char* extend_seed;$/;"	m	struct:__anon7	access:public
+extidx	setFileName.h	/^	char (*extidx)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+fastmap	index.h	/^    lkt_t *fastmap;\/*fastmap 12bp seq*\/$/;"	m	struct:__anon26	access:public
+filter_ext_seq	index1.c	/^int filter_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)
+filter_ext_seq	index2.c	/^int filter_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)
+filter_ext_seq	test_index.c	/^int filter_ext_seq(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)$/;"	f	signature:(uint8_t *pac, bwt_t *bwt, bwtint_t k, bwtint_t l, vec_uint_t *seq16s, bp_t *is_repeat)
+find_local_ext	aln.c	/^int find_local_ext(idx_t *idx, bwtint_t k, uint32_t ext[][2] )$/;"	f	signature:(idx_t *idx, bwtint_t k, uint32_t ext[][2] )
+find_local_ext	test_aln.c	/^int find_local_ext(idx_t *idx, bwtint_t k, uint32_t ext[][2] )$/;"	f	signature:(idx_t *idx, bwtint_t k, uint32_t ext[][2] )
+find_local_ext_alt	aln.c	/^int find_local_ext_alt(idx_t *idx, bwtint_t k, bwtint_t l, working_data_t *w )$/;"	f	signature:(idx_t *idx, bwtint_t k, bwtint_t l, working_data_t *w )
+find_pos	aln.c	/^int find_pos(bwt_t *bwt, bwtint_t k, bwtint_t l, int l_seq, uint8_t *seq, int offset, aln_vec_t *aln)$/;"	f	signature:(bwt_t *bwt, bwtint_t k, bwtint_t l, int l_seq, uint8_t *seq, int offset, aln_vec_t *aln)
+find_pos	test_aln.c	/^int find_pos(bwt_t *bwt, bwtint_t k, bwtint_t l, int l_seq, uint8_t *seq, int offset, aln_vec_t *aln)$/;"	f	signature:(bwt_t *bwt, bwtint_t k, bwtint_t l, int l_seq, uint8_t *seq, int offset, aln_vec_t *aln)
+firstCharInLastIteration	bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+fp	query.h	/^    gzFile fp;$/;"	m	struct:__anon11	access:public
+fp	variants.h	/^    FILE *fp;$/;"	m	struct:__anon33	access:public
+fp_pac	bntseq.h	/^	FILE *fp_pac;$/;"	m	struct:__anon22	access:public
+gen_cnt	aln.c	/^void gen_cnt(uint8_t *bwt, int n_data, uint8_t cnt_2nt[][17])$/;"	f	signature:(uint8_t *bwt, int n_data, uint8_t cnt_2nt[][17])
+gen_ext_seed	aln.c	/^int gen_ext_seed ( const int l_seq[2], const uint8_t *seq[2], uint32_t ext[][2], ext_t *pext[2], const uint32_t *lext1, uint32_t *ext_buf[2], bp_t *map, int n_num, uint32_t pout_data[][8] )$/;"	f	signature:( const int l_seq[2], const uint8_t *seq[2], uint32_t ext[][2], ext_t *pext[2], const uint32_t *lext1, uint32_t *ext_buf[2], bp_t *map, int n_num, uint32_t pout_data[][8] )
+gen_ext_seed	test_aln.c	/^int gen_ext_seed ( const int l_seq[2], const uint8_t *seq[2], uint32_t ext[][2], ext_t *pext[2], const uint32_t *lext1, uint32_t *ext_buf[2], bp_t *map, int n_num, uint32_t pout_data[][8] )$/;"	f	signature:( const int l_seq[2], const uint8_t *seq[2], uint32_t ext[][2], ext_t *pext[2], const uint32_t *lext1, uint32_t *ext_buf[2], bp_t *map, int n_num, uint32_t pout_data[][8] )
+gen_ext_seed_alt	aln.c	/^int gen_ext_seed_alt( const int l_seq[2], const uint8_t *seq[2], working_data_t *working_pool, int n_num, uint32_t (*pout_data)[8] )$/;"	f	signature:( const int l_seq[2], const uint8_t *seq[2], working_data_t *working_pool, int n_num, uint32_t (*pout_data)[8] )
+gen_filename	index.c	/^static void gen_filename(char *str, const char *prefix, const char *suffix)$/;"	f	file:	signature:(char *str, const char *prefix, const char *suffix)
+gen_filename	test_index.c	/^static void gen_filename(char *str, const char *prefix, const char *suffix)$/;"	f	file:	signature:(char *str, const char *prefix, const char *suffix)
+gen_mapq	query.c	/^uint32_t gen_mapq(uint32_t b0, uint32_t b1)$/;"	f	signature:(uint32_t b0, uint32_t b1)
+gen_mapq	query.h	/^uint32_t gen_mapq(uint32_t b0, uint32_t b1);$/;"	p	signature:(uint32_t b0, uint32_t b1)
+gen_seed	gen_test_seeds.c	/^int gen_seed(const char *prefix)$/;"	f	signature:(const char *prefix)
+gen_seeds_main	gen_test_seeds.c	/^int gen_seeds_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+getBlckData	buldSeedExtIdxs.c	/^void getBlckData(uint32_t sidx[2],uint32_t num_ext, $/;"	f	signature:(uint32_t sidx[2],uint32_t num_ext, SubBuf *sub_buf, idx_t *idx )
+getBlckData	buldSeedExtIdxs.c	/^void getBlckData(uint32_t sidx[2],uint32_t num_ext, $/;"	p	file:	signature:(uint32_t sidx[2],uint32_t num_ext, SubBuf *sub_buf, idx_t *idx )
+getBlckData	index1.c	/^void getBlckData(uint32_t sidx[2],uint32_t num_ext, $/;"	f	signature:(uint32_t sidx[2],uint32_t num_ext, SubBuf *sub_buf, idx_t *idx )
+getBlckData	index1.c	/^void getBlckData(uint32_t sidx[2],uint32_t num_ext, SubBuf *sub_buf, idx_t *idx);$/;"	p	file:	signature:(uint32_t sidx[2],uint32_t num_ext, SubBuf *sub_buf, idx_t *idx)
+getBuckets	is.c	/^static void getBuckets(const int *C, int *B, int k, int end)$/;"	f	file:	signature:(const int *C, int *B, int k, int end)
+getCounts	is.c	/^static void getCounts(const unsigned char *T, int *C, int n, int k, int cs)$/;"	f	file:	signature:(const unsigned char *T, int *C, int n, int k, int cs)
+getFileSize	buldSeedExtIdxs.c	/^long getFileSize(char *fn)$/;"	f	signature:(char *fn)
+getFileSize	buldSeedExtIdxs.c	/^long getFileSize(char* file);$/;"	p	file:	signature:(char* file)
+getFileSize	index1.c	/^long getFileSize(char *fn)$/;"	f	signature:(char *fn)
+getFileSize	index1.c	/^long getFileSize(char* file);$/;"	p	file:	signature:(char* file)
+get_12mer_correct	index1.c	/^int get_12mer_correct(uint32_t hash_boundry[], uint32_t end_kmer)$/;"	f	signature:(uint32_t hash_boundry[], uint32_t end_kmer)
+getlen	buldSeedExtIdxs.c	/^uint32_t getlen(uint32_t LenExtIdx[],FileName *f);$/;"	p	file:	signature:(uint32_t LenExtIdx[],FileName *f)
+getlen	buldSeedExtIdxs.c	/^uint32_t getlen(uint32_t l_extidx[], FileName *f)$/;"	f	signature:(uint32_t l_extidx[], FileName *f)
+getlen	index1.c	/^uint32_t getlen(uint32_t LenExtIdx[],FileName *f);$/;"	p	file:	signature:(uint32_t LenExtIdx[],FileName *f)
+getlen	index1.c	/^uint32_t getlen(uint32_t l_extidx[], FileName *f)$/;"	f	signature:(uint32_t l_extidx[], FileName *f)
+gi	bntseq.h	/^	uint32_t gi;$/;"	m	struct:__anon20	access:public
+global_stat_20seed0	index.c	/^int *global_stat_20seed0;$/;"	v
+global_stat_20seed0	index1.c	/^int *global_stat_20seed0;$/;"	v
+global_stat_20seed0	index2.c	/^int *global_stat_20seed0;$/;"	v
+global_stat_20seed0	test_index.c	/^int *global_stat_20seed0;$/;"	v
+global_stat_20seed1	index.c	/^int *global_stat_20seed1;$/;"	v
+global_stat_20seed1	index1.c	/^int *global_stat_20seed1;$/;"	v
+global_stat_20seed1	index2.c	/^int *global_stat_20seed1;$/;"	v
+global_stat_20seed1	test_index.c	/^int *global_stat_20seed1;$/;"	v
+global_stat_36seed	index.c	/^int *global_stat_36seed;$/;"	v
+global_stat_36seed	index1.c	/^int *global_stat_36seed;$/;"	v
+global_stat_36seed	index2.c	/^int *global_stat_36seed;$/;"	v
+global_stat_36seed	test_index.c	/^int *global_stat_36seed;$/;"	v
+h	variants.h	/^    khash_t(id) *h;\/\/rname to rid $/;"	m	struct:__anon33	access:public
+hamming_distance	aln.c	/^int hamming_distance(const uint32_t seq16, const int l_seq, const uint8_t *seq)$/;"	f	signature:(const uint32_t seq16, const int l_seq, const uint8_t *seq)
+hamming_distance	test_aln.c	/^int hamming_distance(uint32_t seq16, int l_seq, uint8_t *seq)$/;"	f	signature:(uint32_t seq16, int l_seq, uint8_t *seq)
+hamming_distance_alt	aln.c	/^int hamming_distance_alt(uint32_t seq16, const int l_seq, const uint8_t *seq)$/;"	f	signature:(uint32_t seq16, const int l_seq, const uint8_t *seq)
+hamming_distance_alt	test_aln.c	/^int hamming_distance_alt(uint32_t seq16, const int l_seq, const uint8_t *seq)$/;"	f	signature:(uint32_t seq16, const int l_seq, const uint8_t *seq)
+hash_64	utils.h	/^static inline uint64_t hash_64(uint64_t key)$/;"	f	signature:(uint64_t key)
+idx	index.h	/^    uint32_t seq, idx;$/;"	m	struct:__anon25	access:public
+idxR	buldSeedExtIdxs.c	/^	uint32_t (*idxR)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon5	file:	access:public
+idxR	index1.c	/^	uint32_t (*idxR)[2]; \/\/ sortR[]的每一个序列的(bgnIdx,ednIdx)$/;"	m	struct:__anon24	file:	access:public
+idx_build_core	index.c	/^int idx_build_core(const char *fn_fa, const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *fn_av, const char *prefix)
+idx_build_core	index1.c	/^int idx_build_core(const char *fn_fa, const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *fn_av, const char *prefix)
+idx_build_core	index2.c	/^int idx_build_core(const char *fn_fa, const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *fn_av, const char *prefix)
+idx_build_core	test_index.c	/^int idx_build_core(const char *fn_fa, const char *fn_av, const char *prefix)$/;"	f	signature:(const char *fn_fa, const char *fn_av, const char *prefix)
+idx_destroy	index.c	/^void idx_destroy(idx_t *idx)$/;"	f	signature:(idx_t *idx)
+idx_destroy	index.h	/^void idx_destroy(idx_t *idx);$/;"	p	signature:(idx_t *idx)
+idx_destroy	index1.c	/^void idx_destroy(idx_t *idx)$/;"	f	signature:(idx_t *idx)
+idx_destroy	index2.c	/^void idx_destroy(idx_t *idx)$/;"	f	signature:(idx_t *idx)
+idx_destroy	test_index.c	/^void idx_destroy(idx_t *idx)$/;"	f	signature:(idx_t *idx)
+idx_destroy	test_locate.c	/^void idx_destroy(idx_t *idx)$/;"	f	signature:(idx_t *idx)
+idx_restore	index.c	/^idx_t *idx_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+idx_restore	index.h	/^idx_t *idx_restore(const char *prefix);$/;"	p	signature:(const char *prefix)
+idx_restore	index1.c	/^idx_t *idx_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+idx_restore	index2.c	/^idx_t *idx_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+idx_restore	test_index.c	/^idx_t *idx_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+idx_restore	test_locate.c	/^idx_t *idx_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+idx_t	index.h	/^} idx_t;$/;"	t	typeref:struct:__anon26
+incMaxBuildSize	bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+index_main	index.c	/^int index_main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+index_main	index1.c	/^int index_main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+index_main	index2.c	/^int index_main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+index_main	test_index.c	/^int index_main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+index_usage	index.c	/^static int index_usage()$/;"	f	file:
+index_usage	index1.c	/^static int index_usage()$/;"	f	file:
+index_usage	index2.c	/^static int index_usage()$/;"	f	file:
+index_usage	test_index.c	/^static int index_usage()$/;"	f	file:
+induceSA	is.c	/^static void induceSA(const unsigned char *T, int *SA, int *C, int *B, int n, int k, int cs)$/;"	f	file:	signature:(const unsigned char *T, int *SA, int *C, int *B, int n, int k, int cs)
+initialMaxBuildSize	bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+initializeVAL	bwt_gen.c	/^static void initializeVAL(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)$/;"	f	file:	signature:(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)
+intv	bitmap.h	/^    int intv;$/;"	m	struct:__anon1	access:public
+inverseSa	bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSa0	bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+inverseSaInterval	bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSaSize	bwt_gen.h	/^	unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+is_bwt	bwtmisc.c	/^int is_bwt(ubyte_t *T, int n);$/;"	p	file:	signature:(ubyte_t *T, int n)
+is_bwt	is.c	/^int is_bwt(ubyte_t *T, int n)$/;"	f	signature:(ubyte_t *T, int n)
+is_multiseeds	index.h	/^    bp_t *is_multiseeds;\/*is_multiseeds[i] = 1 if Reference[sa[i]:sa[i]+20] is multi location seeds *\/$/;"	m	struct:__anon26	access:public
+is_sa	is.c	/^int is_sa(const ubyte_t *T, int *SA, int n)$/;"	f	signature:(const ubyte_t *T, int *SA, int n)
+is_suffix	aln.c	/^int is_suffix(uint32_t seq16, int skip_ref, int skip_seed, int l_seq, uint8_t *seq)$/;"	f	signature:(uint32_t seq16, int skip_ref, int skip_seed, int l_seq, uint8_t *seq)
+is_suffix	test_aln.c	/^int is_suffix(uint32_t seq16, int skip_ref, int skip_seed, int l_seq, uint8_t *seq)$/;"	f	signature:(uint32_t seq16, int skip_ref, int skip_seed, int l_seq, uint8_t *seq)
+is_variant	aln.c	/^int is_variant(var_t *var, int l_seq, const uint8_t *seq)$/;"	f	signature:(var_t *var, int l_seq, const uint8_t *seq)
+is_variant	test_aln.c	/^int is_variant(var_t *var, int l_seq, const uint8_t *seq)$/;"	f	signature:(var_t *var, int l_seq, const uint8_t *seq)
+isa	bwt.h	/^    bwtint_t *isa;$/;"	m	struct:__anon6	access:public
+isa2seq16	index.h	/^    uint32_t* isa2seq16; \/* isa2seq16[i] = start of seq16s, i is occ of 1 in is_multiseeds before isa*\/$/;"	m	struct:__anon26	access:public
+item	lookup.h	/^    uint32_t *item;$/;"	m	struct:__anon19	access:public
+jmpmod	setFileName.h	/^	char *jmpmod;$/;"	m	struct:__anon30	access:public
+k	aln.c	/^    uint32_t k, l;$/;"	m	struct:__anon14	file:	access:public
+k	aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+k	query.h	/^    uint32_t k, l;\/\/template seq bwt range$/;"	m	struct:__anon7	access:public
+k	test_aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+k0	aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+k0	test_aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+kcalloc	khash.h	167;"	d
+kfree	khash.h	176;"	d
+kh_begin	khash.h	515;"	d
+kh_clear	khash.h	441;"	d
+kh_cstr_t	khash.h	/^typedef const char *kh_cstr_t;$/;"	t
+kh_del	khash.h	478;"	d
+kh_destroy	khash.h	434;"	d
+kh_end	khash.h	522;"	d
+kh_exist	khash.h	486;"	d
+kh_foreach	khash.h	545;"	d
+kh_foreach_key	khash.h	558;"	d
+kh_foreach_value	khash.h	572;"	d
+kh_get	khash.h	470;"	d
+kh_init	khash.h	427;"	d
+kh_inline	khash.h	138;"	d
+kh_inline	khash.h	140;"	d
+kh_int64_hash_equal	khash.h	377;"	d
+kh_int64_hash_func	khash.h	373;"	d
+kh_int_hash_equal	khash.h	367;"	d
+kh_int_hash_func	khash.h	363;"	d
+kh_int_hash_func2	khash.h	410;"	d
+kh_key	khash.h	494;"	d
+kh_n_buckets	khash.h	536;"	d
+kh_put	khash.h	461;"	d
+kh_resize	khash.h	449;"	d
+kh_size	khash.h	529;"	d
+kh_str_hash_equal	khash.h	398;"	d
+kh_str_hash_func	khash.h	394;"	d
+kh_val	khash.h	503;"	d
+kh_value	khash.h	508;"	d
+khash_t	khash.h	420;"	d
+khint32_t	khash.h	/^typedef unsigned int khint32_t;$/;"	t
+khint32_t	khash.h	/^typedef unsigned long khint32_t;$/;"	t
+khint64_t	khash.h	/^typedef unsigned long khint64_t;$/;"	t
+khint64_t	khash.h	/^typedef unsigned long long khint64_t;$/;"	t
+khint_t	khash.h	/^typedef khint32_t khint_t;$/;"	t
+khiter_t	khash.h	/^typedef khint_t khiter_t;$/;"	t
+kmalloc	khash.h	170;"	d
+kputc	kstring.h	/^static inline int kputc(int c, kstring_t *s)$/;"	f	signature:(int c, kstring_t *s)
+kputl	kstring.h	/^static inline int kputl(long c, kstring_t *s)$/;"	f	signature:(long c, kstring_t *s)
+kputs	kstring.h	/^static inline int kputs(const char *p, kstring_t *s)$/;"	f	signature:(const char *p, kstring_t *s)
+kputsn	kstring.h	/^static inline int kputsn(const char *p, int l, kstring_t *s)$/;"	f	signature:(const char *p, int l, kstring_t *s)
+kputuw	kstring.h	/^static inline int kputuw(unsigned c, kstring_t *s)$/;"	f	signature:(unsigned c, kstring_t *s)
+kputw	kstring.h	/^static inline int kputw(int c, kstring_t *s)$/;"	f	signature:(int c, kstring_t *s)
+krealloc	khash.h	173;"	d
+kroundup32	khash.h	163;"	d
+kroundup32	kseq.h	88;"	d
+kroundup32	kstring.h	12;"	d
+ks_combsort	ksort.h	259;"	d
+ks_eof	kseq.h	47;"	d
+ks_heapadjust	ksort.h	262;"	d
+ks_heapmake	ksort.h	261;"	d
+ks_heapsort	ksort.h	260;"	d
+ks_introsort	ksort.h	258;"	d
+ks_introsort_128	utils.h	/^	void ks_introsort_128(size_t n, pair64_t *a);$/;"	p	signature:(size_t n, pair64_t *a)
+ks_introsort_64	utils.h	/^	void ks_introsort_64 (size_t n, uint64_t *a);$/;"	p	signature:(size_t n, uint64_t *a)
+ks_isort_stack_t	ksort.h	/^} ks_isort_stack_t;$/;"	t	typeref:struct:__anon2
+ks_ksmall	ksort.h	263;"	d
+ks_lt_generic	ksort.h	265;"	d
+ks_lt_str	ksort.h	266;"	d
+ks_mergesort	ksort.h	257;"	d
+ks_resize	kstring.h	/^static inline void ks_resize(kstring_t *s, size_t size)$/;"	f	signature:(kstring_t *s, size_t size)
+ks_rewind	kseq.h	48;"	d
+kseq	query.h	/^    kseq_t *kseq;$/;"	m	struct:__anon11	access:public
+kseq_rewind	kseq.h	149;"	d
+ksprintf	kstring.c	/^int ksprintf(kstring_t *s, const char *fmt, ...)$/;"	f	signature:(kstring_t *s, const char *fmt, ...)
+ksprintf	kstring.h	/^int ksprintf(kstring_t *s, const char *fmt, ...);$/;"	p	signature:(kstring_t *s, const char *fmt, ...)
+ksstr_t	ksort.h	/^typedef const char *ksstr_t;$/;"	t
+kstring_t	kseq.h	/^} kstring_t;$/;"	t	typeref:struct:__kstring_t
+kstring_t	kstring.h	/^} kstring_t;$/;"	t	typeref:struct:__kstring_t
+kv_A	kvec.h	62;"	d
+kv_a	kvec.h	88;"	d
+kv_copy	kvec.h	69;"	d
+kv_destroy	kvec.h	61;"	d
+kv_init	kvec.h	60;"	d
+kv_max	kvec.h	65;"	d
+kv_pop	kvec.h	63;"	d
+kv_push	kvec.h	75;"	d
+kv_pushp	kvec.h	83;"	d
+kv_resize	kvec.h	67;"	d
+kv_roundup32	kvec.h	57;"	d
+kv_size	kvec.h	64;"	d
+kvec_t	kvec.h	59;"	d
+l	aln.c	/^    uint32_t k, l;$/;"	m	struct:__anon14	file:	access:public
+l	aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+l	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+l	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+l	kstring.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+l	query.h	/^    int l;\/\/seed length$/;"	m	struct:__anon8	access:public
+l	query.h	/^    uint32_t k, l;\/\/template seq bwt range$/;"	m	struct:__anon7	access:public
+l	test_aln.c	/^    uint32_t k, l;\/* template seq bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+l0	aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon15	file:	access:public
+l0	test_aln.c	/^    uint32_t k0, l0;\/* 36bp bwt index *\/$/;"	m	struct:__anon29	file:	access:public
+l_aln	aln.c	/^    int l_aln;$/;"	m	struct:__anon15	file:	access:public
+l_aln	query.h	/^    uint32_t l_aln;\/\/non-variant align length$/;"	m	struct:__anon7	access:public
+l_aln	test_aln.c	/^    int l_aln;$/;"	m	struct:__anon29	file:	access:public
+l_cigar	query.h	/^    int l_cigar;$/;"	m	struct:__anon10	access:public
+l_pac	bntseq.h	/^	int64_t l_pac;$/;"	m	struct:__anon22	access:public
+l_seq	query.h	/^    int l_seq;  $/;"	m	struct:__anon10	access:public
+leadingZero	QSufSort.c	/^static unsigned int leadingZero(const unsigned int input) {$/;"	f	file:	signature:(const unsigned int input)
+leadingZero	bwt_gen.c	/^unsigned int leadingZero(const unsigned int input)$/;"	f	signature:(const unsigned int input)
+left	ksort.h	/^	void *left, *right;$/;"	m	struct:__anon2	access:public
+len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon20	access:public
+len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon21	access:public
+len	variants.h	/^    uint32_t len;$/;"	m	struct:__anon32	access:public
+len_capidx	buldSeedExtIdxs.c	/^	uint32_t len_capidx ;  \/\/ 当前块前为止capidx数组中的全局capidx数据长度；$/;"	m	struct:__anon5	file:	access:public
+len_capidx	index1.c	/^	uint32_t len_capidx ;  \/\/ 当前块前为止capidx数组中的全局capidx数据长度；$/;"	m	struct:__anon24	file:	access:public
+len_nxtflg	buldSeedExtIdxs.c	/^	uint32_t len_nxtflg ;  \/\/ 当前块前为止nxtflg数组中的全局flg数据长度；$/;"	m	struct:__anon5	file:	access:public
+len_nxtflg	index1.c	/^	uint32_t len_nxtflg ;  \/\/ 当前块前为止nxtflg数组中的全局flg数据长度；$/;"	m	struct:__anon24	file:	access:public
+len_nxtpnt	buldSeedExtIdxs.c	/^	uint32_t len_nxtpnt ;  \/\/ 当前块前为止nxtpnt数组中的全局nxtpnt数据长度；$/;"	m	struct:__anon5	file:	access:public
+len_nxtpnt	index1.c	/^	uint32_t len_nxtpnt ;  \/\/ 当前块前为止nxtpnt数组中的全局nxtpnt数据长度；$/;"	m	struct:__anon24	file:	access:public
+len_relat	buldSeedExtIdxs.c	/^	uint32_t len_relat  ;  \/\/ 当前块前为止relat数组中的全局relat数据长度；	$/;"	m	struct:__anon5	file:	access:public
+len_relat	index1.c	/^	uint32_t len_relat  ;  \/\/ 当前块前为止relat数组中的全局relat数据长度；	$/;"	m	struct:__anon24	file:	access:public
+len_smbwt	buldSeedExtIdxs.c	/^	uint32_t len_smbwt  ;  \/\/ 当前块前为止smbwt数组中的全局smbwt数据长度；	$/;"	m	struct:__anon5	file:	access:public
+len_smbwt	index1.c	/^	uint32_t len_smbwt  ;  \/\/ 当前块前为止smbwt数组中的全局smbwt数据长度；	$/;"	m	struct:__anon24	file:	access:public
+len_smpos	buldSeedExtIdxs.c	/^	uint32_t len_smpos  ;  \/\/ 当前块前为止smpos数组中的全局pos数据长度；$/;"	m	struct:__anon5	file:	access:public
+len_smpos	index1.c	/^	uint32_t len_smpos  ;  \/\/ 当前块前为止smpos数组中的全局pos数据长度；$/;"	m	struct:__anon24	file:	access:public
+lext0	index.h	/^    ext_t *rext0, *lext0;$/;"	m	struct:__anon26	access:public
+lext1	index.h	/^    uint32_t *lext1;$/;"	m	struct:__anon26	access:public
+lext1_idx	index.h	/^    uint32_t *lext1_idx;$/;"	m	struct:__anon26	access:public
+lext_idx	index.h	/^    uint32_t *lext_idx;$/;"	m	struct:__anon26	access:public
+lkt_build_lookuptable	lookup.c	/^void lkt_build_lookuptable(const char *fn_pac, lkt_t *lkt)$/;"	f	signature:(const char *fn_pac, lkt_t *lkt)
+lkt_build_lookuptable	lookup.h	/^void lkt_build_lookuptable(const char *fn_pac, lkt_t *lkt);$/;"	p	signature:(const char *fn_pac, lkt_t *lkt)
+lkt_destroy	lookup.c	/^void lkt_destroy(lkt_t *lkt)$/;"	f	signature:(lkt_t *lkt)
+lkt_destroy	lookup.h	/^void lkt_destroy(lkt_t *lkt);$/;"	p	signature:(lkt_t *lkt)
+lkt_dump	lookup.c	/^void lkt_dump(const char *fn_lkt, lkt_t *lkt)$/;"	f	signature:(const char *fn_lkt, lkt_t *lkt)
+lkt_dump	lookup.h	/^void lkt_dump(const char *fn_lkt, lkt_t *lkt);$/;"	p	signature:(const char *fn_lkt, lkt_t *lkt)
+lkt_init	lookup.c	/^lkt_t *lkt_init(const int maxLookupLen)$/;"	f	signature:(const int maxLookupLen)
+lkt_init	lookup.h	/^lkt_t *lkt_init(const int maxLookupLen);$/;"	p	signature:(const int maxLookupLen)
+lkt_lookup_sa	lookup.h	/^static inline int lkt_lookup_sa(lkt_t *lkt, const uint8_t *seq, int from, int to, uint32_t *l, uint32_t *k)$/;"	f	signature:(lkt_t *lkt, const uint8_t *seq, int from, int to, uint32_t *l, uint32_t *k)
+lkt_restore	lookup.c	/^lkt_t *lkt_restore(const char *fn_lkt)$/;"	f	signature:(const char *fn_lkt)
+lkt_restore	lookup.h	/^lkt_t *lkt_restore(const char *fn_lkt);$/;"	p	signature:(const char *fn_lkt)
+lkt_seq2LktItem	lookup.c	/^uint32_t lkt_seq2LktItem(const uint8_t *seq, int from, int to)$/;"	f	signature:(const uint8_t *seq, int from, int to)
+lkt_seq2LktItem	lookup.h	/^uint32_t lkt_seq2LktItem(const uint8_t *seq, int from, int to);$/;"	p	signature:(const uint8_t *seq, int from, int to)
+lkt_t	lookup.h	/^} lkt_t;$/;"	t	typeref:struct:__anon19
+local_lext0	aln.c	/^    ext_t *local_lext0, *local_rext;$/;"	m	struct:__anon14	file:	access:public
+local_lext1	aln.c	/^    uint32_t *local_lext1;$/;"	m	struct:__anon14	file:	access:public
+local_rext	aln.c	/^    ext_t *local_lext0, *local_rext;$/;"	m	struct:__anon14	file:	access:public
+locate_step	test_locate.c	/^bwtint_t locate_step(const bwt_t *bwt, bwtint_t k)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k)
+log_bt2nt	aln.c	/^extern void log_bt2nt(int l, uint8_t *bt);$/;"	p	file:	signature:(int l, uint8_t *bt)
+log_bt2nt	index.c	/^void log_bt2nt(int l, uint8_t *bt)$/;"	f	signature:(int l, uint8_t *bt)
+log_bt2nt	index1.c	/^void log_bt2nt(int l, uint8_t *bt)$/;"	f	signature:(int l, uint8_t *bt)
+log_bt2nt	index2.c	/^void log_bt2nt(int l, uint8_t *bt)$/;"	f	signature:(int l, uint8_t *bt)
+log_bt2nt	test_aln.c	/^extern void log_bt2nt(int l, uint8_t *bt);$/;"	p	file:	signature:(int l, uint8_t *bt)
+log_bt2nt	test_index.c	/^void log_bt2nt(int l, uint8_t *bt)$/;"	f	signature:(int l, uint8_t *bt)
+log_bwt_seq	aln.c	/^void log_bwt_seq(bwt_t *bwt, bwtint_t k, bwtint_t l, uint8_t *pac, int n)$/;"	f	signature:(bwt_t *bwt, bwtint_t k, bwtint_t l, uint8_t *pac, int n)
+log_bwt_seq	test_aln.c	/^void log_bwt_seq(bwt_t *bwt, bwtint_t k, bwtint_t l, uint8_t *pac, int n)$/;"	f	signature:(bwt_t *bwt, bwtint_t k, bwtint_t l, uint8_t *pac, int n)
+log_sa	index.c	/^int log_sa(bwtint_t n_sa, bwtint_t *sa)$/;"	f	signature:(bwtint_t n_sa, bwtint_t *sa)
+log_sa	index1.c	/^int log_sa(bwtint_t n_sa, bwtint_t *sa)$/;"	f	signature:(bwtint_t n_sa, bwtint_t *sa)
+log_sa	index2.c	/^int log_sa(bwtint_t n_sa, bwtint_t *sa)$/;"	f	signature:(bwtint_t n_sa, bwtint_t *sa)
+log_sa	test_index.c	/^int log_sa(bwtint_t n_sa, bwtint_t *sa)$/;"	f	signature:(bwtint_t n_sa, bwtint_t *sa)
+log_seed_entry	aln.c	/^static void log_seed_entry(seed_entry_t *e)$/;"	f	file:	signature:(seed_entry_t *e)
+log_seed_entry	test_aln.c	/^static void log_seed_entry(seed_entry_t *e)$/;"	f	file:	signature:(seed_entry_t *e)
+log_seq16	aln.c	/^void log_seq16(uint32_t seq16)$/;"	f	signature:(uint32_t seq16)
+log_seq16	test_aln.c	/^void log_seq16(uint32_t seq16)$/;"	f	signature:(uint32_t seq16)
+log_seq162nt	index.c	/^void log_seq162nt(uint32_t x)$/;"	f	signature:(uint32_t x)
+log_seq162nt	index1.c	/^void log_seq162nt(uint32_t x)$/;"	f	signature:(uint32_t x)
+log_seq162nt	index2.c	/^void log_seq162nt(uint32_t x)$/;"	f	signature:(uint32_t x)
+log_seq162nt	test_index.c	/^void log_seq162nt(uint32_t x)$/;"	f	signature:(uint32_t x)
+log_template_seed	query.h	/^static  void log_template_seed(template_seed_t *ts)$/;"	f	signature:(template_seed_t *ts)
+lower_bound	bsearch.c	/^bs_iter_t lower_bound(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)$/;"	f	signature:(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)
+lower_bound	bsearch.h	/^bs_iter_t lower_bound(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val);$/;"	p	signature:(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)
+m	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+m	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+m	kstring.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+m	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+m	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+main	aln.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	bitmap.c	/^int main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+main	bsearch.c	/^int main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+main	bwt_gen.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	gen_test_seeds.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	index.c	/^int main(int argc, char *argv[]){$/;"	f	signature:(int argc, char *argv[])
+main	index1.c	/^int main(int argc, char *argv[]){$/;"	f	signature:(int argc, char *argv[])
+main	index2.c	/^int main(int argc, char *argv[]){$/;"	f	signature:(int argc, char *argv[])
+main	kstring.c	/^int main()$/;"	f
+main	lookup.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	test.c	/^int main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+main	test_aln.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	test_index.c	/^int main(int argc, char *argv[]){$/;"	f	signature:(int argc, char *argv[])
+main	test_locate.c	/^int main(int argc, char *argv[]){$/;"	f	signature:(int argc, char *argv[])
+main	variants.c	/^int main()$/;"	f
+malloc	malloc_wrap.h	31;"	d
+malloc	malloc_wrap.h	33;"	d
+map	aln.c	/^    bp_t *map;\/\/auxiliary bit map$/;"	m	struct:__anon14	file:	access:public
+max	bwt_gen.h	52;"	d
+maxLookupLen	lookup.h	/^    uint32_t maxLookupLen;$/;"	m	struct:__anon19	access:public
+med3	bwt_gen.h	53;"	d
+min	bwt_gen.h	51;"	d
+n	aln.c	/^    int n;$/;"	m	struct:__anon12	file:	access:public
+n	query.h	/^    int n;$/;"	m	struct:__anon8	access:public
+n	test_aln.c	/^    int n;$/;"	m	struct:__anon27	file:	access:public
+n	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	m	struct:__anon18	access:public
+n	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	m	struct:__anon17	access:public
+n_N	query.h	/^    int n_N;$/;"	m	struct:__anon10	access:public
+n_a	bitmap.h	/^    size_t l, m, n_a;$/;"	m	struct:__anon1	access:public
+n_alt	query.h	/^    int n_alt;$/;"	m	struct:__anon10	access:public
+n_ambs	bntseq.h	/^	int32_t n_ambs;$/;"	m	struct:__anon20	access:public
+n_chrom	variants.h	/^    uint32_t n_chrom;    $/;"	m	struct:__anon33	access:public
+n_holes	bntseq.h	/^	int32_t n_holes;$/;"	m	struct:__anon22	access:public
+n_isa2seq16	index.h	/^    uint32_t n_isa2seq16;$/;"	m	struct:__anon26	access:public
+n_item	lookup.h	/^    uint32_t n_item;$/;"	m	struct:__anon19	access:public
+n_lext0	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+n_lext0	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+n_lext1	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+n_lext1	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+n_occ	bitmap.h	/^    int n_occ;$/;"	m	struct:__anon1	access:public
+n_pmap	index.h	/^    int n_pmap;$/;"	m	struct:__anon26	access:public
+n_rext	aln.c	/^    int n_lext0, n_lext1, n_rext;$/;"	m	struct:__anon14	file:	access:public
+n_rext	index.h	/^    int n_rext, n_lext0, n_lext1;$/;"	m	struct:__anon26	access:public
+n_sa	bwt.h	/^	bwtint_t n_sa;$/;"	m	struct:__anon6	access:public
+n_seed	query.h	/^    int n_seed;$/;"	m	struct:__anon10	access:public
+n_seq16s	index.h	/^    uint32_t n_seq16s;$/;"	m	struct:__anon26	access:public
+n_seqs	bntseq.h	/^	int32_t n_seqs;$/;"	m	struct:__anon22	access:public
+n_tot	index.h	/^    int n_tot;$/;"	m	struct:__anon26	access:public
+n_var	index.h	/^    int n_var;$/;"	m	struct:__anon26	access:public
+n_var	variants.h	/^    uint32_t n_var;   $/;"	m	struct:__anon33	access:public
+name	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon20	access:public
+name	query.h	/^    char *name, *comment;$/;"	m	struct:__anon10	access:public
+name	variants.h	/^    char *name;$/;"	m	struct:__anon32	access:public
+nst_color_space_table	bwtmisc.c	/^const int nst_color_space_table[] = { 4, 0, 0, 1, 0, 2, 3, 4, 0, 3, 2, 4, 1, 4, 4, 4};$/;"	v
+num_bwtL	buldSeedExtIdxs.c	/^	uint32_t num_bwtL;$/;"	m	struct:__anon5	file:	access:public
+num_bwtL	index1.c	/^	uint32_t num_bwtL;$/;"	m	struct:__anon24	file:	access:public
+num_bwtR	buldSeedExtIdxs.c	/^	uint32_t num_bwtR;$/;"	m	struct:__anon5	file:	access:public
+num_bwtR	index1.c	/^	uint32_t num_bwtR;$/;"	m	struct:__anon24	file:	access:public
+num_bwtseqL	buldSeedExtIdxs.c	/^	uint8_t  num_bwtseqL;   $/;"	m	struct:__anon5	file:	access:public
+num_bwtseqL	index1.c	/^	uint8_t  num_bwtseqL;   $/;"	m	struct:__anon24	file:	access:public
+num_bwtseqR	buldSeedExtIdxs.c	/^	uint8_t  num_bwtseqR;   $/;"	m	struct:__anon5	file:	access:public
+num_bwtseqR	index1.c	/^	uint8_t  num_bwtseqR;   $/;"	m	struct:__anon24	file:	access:public
+num_bwtsumL	buldSeedExtIdxs.c	/^	uint8_t  num_bwtsumL; $/;"	m	struct:__anon5	file:	access:public
+num_bwtsumL	index1.c	/^	uint8_t  num_bwtsumL; $/;"	m	struct:__anon24	file:	access:public
+num_bwtsumR	buldSeedExtIdxs.c	/^	uint8_t  num_bwtsumR;$/;"	m	struct:__anon5	file:	access:public
+num_bwtsumR	index1.c	/^	uint8_t  num_bwtsumR;$/;"	m	struct:__anon24	file:	access:public
+num_pos	buldSeedExtIdxs.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon4	file:	access:public
+num_pos	buldSeedExtIdxs.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon5	file:	access:public
+num_pos	index1.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon23	file:	access:public
+num_pos	index1.c	/^	uint32_t num_pos ; 	 \/\/ 当前块中pos数据个数；$/;"	m	struct:__anon24	file:	access:public
+num_relat	buldSeedExtIdxs.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon4	file:	access:public
+num_relat	buldSeedExtIdxs.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon5	file:	access:public
+num_relat	index1.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon23	file:	access:public
+num_relat	index1.c	/^	uint32_t num_relat;  \/\/ 当前块中relat数据个数；	$/;"	m	struct:__anon24	file:	access:public
+num_seqL	buldSeedExtIdxs.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon4	file:	access:public
+num_seqL	buldSeedExtIdxs.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon5	file:	access:public
+num_seqL	index1.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon23	file:	access:public
+num_seqL	index1.c	/^	uint32_t num_seqL ;  \/\/ 当前块中seqL数据个数；$/;"	m	struct:__anon24	file:	access:public
+num_seqR	buldSeedExtIdxs.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon4	file:	access:public
+num_seqR	buldSeedExtIdxs.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon5	file:	access:public
+num_seqR	index1.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon23	file:	access:public
+num_seqR	index1.c	/^	uint32_t num_seqR ;  \/\/ 当前块中seqR数据个数；$/;"	m	struct:__anon24	file:	access:public
+numberOfIterationDone	bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+numidxfiles	setFileName.h	/^	int  numidxfiles;$/;"	m	struct:__anon30	access:public
+nxt_flg	buldSeedExtIdxs.c	/^	uint8_t  *nxt_flg;  \/\/ 保存当前快中的nxt_flg数据；$/;"	m	struct:__anon5	file:	access:public
+nxt_flg	index1.c	/^	uint8_t  *nxt_flg;  \/\/ 保存当前快中的nxt_flg数据；$/;"	m	struct:__anon24	file:	access:public
+nxt_idx	buldSeedExtIdxs.c	/^	uint32_t *nxt_idx;  \/\/ 保存当前快中的nxt_idx数据；$/;"	m	struct:__anon5	file:	access:public
+nxt_idx	index1.c	/^	uint32_t *nxt_idx;  \/\/ 保存当前快中的nxt_idx数据；$/;"	m	struct:__anon24	file:	access:public
+nxtcap	buldSeedExtIdxs.c	/^    uint32_t nxtcap;	$/;"	m	struct:__anon4	file:	access:public
+nxtcap	index1.c	/^    uint32_t nxtcap;	$/;"	m	struct:__anon23	file:	access:public
+nxtflg	setFileName.h	/^	char (*nxtflg)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+nxtpnt	setFileName.h	/^	char (*nxtpnt)[LEN_FILE_NAME]  ;$/;"	m	struct:__anon30	access:public
+occ	bitmap.h	/^    size_t *occ;$/;"	m	struct:__anon1	access:public
+occMajorSizeInWord	bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occSizeInWord	bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occValue	bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+occValueMajor	bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon20	access:public
+offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon21	access:public
+offset	query.h	/^    int offset;\/\/seed start pos on read$/;"	m	struct:__anon8	access:public
+offset	variants.h	/^    uint32_t offset; $/;"	m	struct:__anon32	access:public
+orign	variants.h	/^    char* orign; $/;"	m	struct:__anon31	access:public
+pac	index.h	/^    uint8_t *pac;\/* packed reference seq *\/$/;"	m	struct:__anon26	access:public
+packedShift	bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+packedText	bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+pair64_lt	utils.c	45;"	d	file:
+pair64_t	utils.h	/^} pair64_t;$/;"	t	typeref:struct:__anon16
+pair64_v	utils.h	/^typedef struct { size_t n, m; pair64_t *a; } pair64_v;$/;"	t	typeref:struct:__anon18
+pmap	index.h	/^    uint32_t *pmap;\/* preseq map *\/ $/;"	m	struct:__anon26	access:public
+pos	aln.c	/^    uint32_t pos;$/;"	m	struct:__anon15	file:	access:public
+pos	aln.h	/^    uint32_t pos;$/;"	m	struct:__anon3	access:public
+pos	query.h	/^    uint32_t pos;$/;"	m	struct:__anon7	access:public
+pos	query.h	/^    uint32_t pos;$/;"	m	struct:__anon9	access:public
+pos	query.h	/^    uint32_t pos;\/\/primary alignment$/;"	m	struct:__anon10	access:public
+pos	query.h	/^    uint32_t pos;\/\/reference position$/;"	m	struct:__anon8	access:public
+pos	test_aln.c	/^    uint32_t pos;$/;"	m	struct:__anon29	file:	access:public
+pos_buf	buldSeedExtIdxs.c	/^	uint32_t *pos_buf;  \/\/ 保存当前快中的pos数据； 	$/;"	m	struct:__anon5	file:	access:public
+pos_buf	index1.c	/^	uint32_t *pos_buf;  \/\/ 保存当前快中的pos数据； 	$/;"	m	struct:__anon24	file:	access:public
+preseq	aln.c	/^    uint8_t preseq[8];\/* variant preseq include 2bp variants *\/$/;"	m	struct:__anon15	file:	access:public
+preseq	test_aln.c	/^    uint8_t preseq[8];\/* variant preseq include 2bp variants *\/$/;"	m	struct:__anon29	file:	access:public
+primary	bwt.h	/^	bwtint_t primary; \/\/ S^{-1}(0), or the primary index of BWT$/;"	m	struct:__anon6	access:public
+print_query	query.c	/^void print_query(query_t *q)$/;"	f	signature:(query_t *q)
+print_query	query.h	/^void print_query(query_t *q);$/;"	p	signature:(query_t *q)
+print_reads	gen_test_seeds.c	/^void print_reads(const uint8_t*refseq, int var_start, int var_end, const char*alt, uint32_t ref_pos, bwtint_t *isa)$/;"	f	signature:(const uint8_t*refseq, int var_start, int var_end, const char*alt, uint32_t ref_pos, bwtint_t *isa)
+qual	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+query_close	query.c	/^void query_close(queryio_t *qs)$/;"	f	signature:(queryio_t *qs)
+query_close	query.h	/^void query_close(queryio_t *qs);$/;"	p	signature:(queryio_t *qs)
+query_destroy	query.c	/^void query_destroy(query_t *query)$/;"	f	signature:(query_t *query)
+query_destroy	query.h	/^void query_destroy(query_t *query);$/;"	p	signature:(query_t *query)
+query_gen_cigar	query.h	/^void query_gen_cigar(uint32_t l_ref, const uint32_t *mixRef, query_t *query);$/;"	p	signature:(uint32_t l_ref, const uint32_t *mixRef, query_t *query)
+query_open	query.c	/^queryio_t *query_open(const char *fn_fa)$/;"	f	signature:(const char *fn_fa)
+query_open	query.h	/^queryio_t *query_open(const char *fn_fa);$/;"	p	signature:(const char *fn_fa)
+query_read_multiPairedSeqs	query.c	/^int query_read_multiPairedSeqs(queryio_t *qs[], int n_seq, query_t *multiSeqs)$/;"	f	signature:(queryio_t *qs[], int n_seq, query_t *multiSeqs)
+query_read_multiPairedSeqs	query.h	/^int query_read_multiPairedSeqs(queryio_t *qs[], int n_seq, query_t *multiSeqs);$/;"	p	signature:(queryio_t *qs[], int n_seq, query_t *multiSeqs)
+query_read_multiSeqs	query.c	/^int query_read_multiSeqs(queryio_t *qs, int n_seq, query_t *multiSeqs)$/;"	f	signature:(queryio_t *qs, int n_seq, query_t *multiSeqs)
+query_read_multiSeqs	query.h	/^int query_read_multiSeqs(queryio_t *qs, int n_seq, query_t *multiSeqs);$/;"	p	signature:(queryio_t *qs, int n_seq, query_t *multiSeqs)
+query_read_seq	query.c	/^int query_read_seq(queryio_t *qs, query_t *query)$/;"	f	signature:(queryio_t *qs, query_t *query)
+query_read_seq	query.h	/^int query_read_seq(queryio_t *qs, query_t *query);$/;"	p	signature:(queryio_t *qs, query_t *query)
+query_seq_reverse	query.c	/^void query_seq_reverse(int len, uint8_t *seq, int is_comp)$/;"	f	signature:(int len, uint8_t *seq, int is_comp)
+query_seq_reverse	query.h	/^void query_seq_reverse(int len, uint8_t *seq, int is_comp);$/;"	p	signature:(int len, uint8_t *seq, int is_comp)
+query_t	query.h	/^} query_t;$/;"	t	typeref:struct:__anon10
+queryio_t	query.h	/^} queryio_t;$/;"	t	typeref:struct:__anon11
+realloc	malloc_wrap.h	36;"	d
+realloc	malloc_wrap.h	38;"	d
+realtime	utils.c	/^double realtime()$/;"	f
+realtime	utils.h	/^	double realtime();$/;"	p	signature:()
+refseq	index.h	/^    uint8_t *refseq;\/*2bp refseq at variant site*\/$/;"	m	struct:__anon26	access:public
+relat	buldSeedExtIdxs.c	/^	uint32_t *relat ;	$/;"	m	struct:__anon5	file:	access:public
+relat	buldSeedExtIdxs.c	/^	uint32_t relat;	$/;"	m	struct:__anon4	file:	access:public
+relat	index1.c	/^	uint32_t *relat ;	$/;"	m	struct:__anon24	file:	access:public
+relat	index1.c	/^	uint32_t relat;	$/;"	m	struct:__anon23	file:	access:public
+relat	setFileName.h	/^	char (*relat)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+relatNxtCapIdx	buldSeedExtIdxs.c	/^void relatNxtCapIdx(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *jmp_mod,uint32_t *cap_pos,uint32_t *ItoPos);$/;"	p	file:	signature:(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *jmp_mod,uint32_t *cap_pos,uint32_t *ItoPos)
+relatNxtCapIdx	buldSeedExtIdxs.c	/^void relatNxtCapIdx(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *mod_idx,uint32_t *cap_pos,uint32_t *ItoPos){$/;"	f	signature:(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *mod_idx,uint32_t *cap_pos,uint32_t *ItoPos)
+relatNxtCapIdx	index1.c	/^void relatNxtCapIdx(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *jmp_mod,uint32_t *cap_pos,uint32_t *sa);$/;"	p	file:	signature:(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *jmp_mod,uint32_t *cap_pos,uint32_t *sa)
+relatNxtCapIdx	index1.c	/^void relatNxtCapIdx(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *mod_idx,uint32_t *cap_pos,uint32_t *sa){$/;"	f	signature:(SubBuf *subBuf,uint32_t *jmp_idx, uint8_t *mod_idx,uint32_t *cap_pos,uint32_t *sa)
+rem_euqal	index1.c	/^int rem_euqal(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)$/;"	f	signature:(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)
+rem_euqal	index2.c	/^int rem_euqal(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)$/;"	f	signature:(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)
+rem_euqal	test_index.c	/^int rem_euqal(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)$/;"	f	signature:(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)
+restore_extend_idx	index1.c	/^void restore_extend_idx(idx_t *idx, const char *prefix)$/;"	f	signature:(idx_t *idx, const char *prefix)
+restore_extend_idx	index2.c	/^void restore_extend_idx(idx_t *idx, const char *prefix)$/;"	f	signature:(idx_t *idx, const char *prefix)
+rext0	index.h	/^    ext_t *rext0, *lext0;$/;"	m	struct:__anon26	access:public
+rext_idx	index.h	/^    uint32_t *rext_idx; $/;"	m	struct:__anon26	access:public
+right	ksort.h	/^	void *left, *right;$/;"	m	struct:__anon2	access:public
+rm_euqal	buldSeedExtIdxs.c	/^int rm_euqal(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)$/;"	f	signature:(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)
+rm_euqal	index1.c	/^int rm_euqal(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)$/;"	f	signature:(vec_uint_t *seq_buf, bwtint_t k, vec_ext_t *rext)
+rseq	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+s	kseq.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+s	kstring.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+sa	bwt.h	/^	bwtint_t *sa;$/;"	m	struct:__anon6	access:public
+saIndexRange	bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+saIndexRangeNumOfChar	bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+saIndexRangeSize	bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+saInterval	bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+saValue	bwt_gen.h	/^	unsigned int *saValue;				\/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+saValueOnBoundary	bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+saValueSize	bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+sa_intv	bwt.h	/^	int sa_intv;$/;"	m	struct:__anon6	access:public
+sai	index.h	/^    uint32_t *sai;\/* sa index *\/$/;"	m	struct:__anon26	access:public
+sais_main	is.c	/^static int sais_main(const unsigned char *T, int *SA, int fs, int n, int k, int cs)$/;"	f	file:	signature:(const unsigned char *T, int *SA, int fs, int n, int k, int cs)
+seed	bntseq.h	/^	uint32_t seed;$/;"	m	struct:__anon22	access:public
+seed_candidate_t	aln.c	/^} seed_candidate_t;$/;"	t	typeref:struct:__anon12	file:
+seed_candidate_t	test_aln.c	/^} seed_candidate_t;$/;"	t	typeref:struct:__anon27	file:
+seed_entry_t	aln.c	/^} seed_entry_t;$/;"	t	typeref:struct:__anon15	file:
+seed_entry_t	test_aln.c	/^} seed_entry_t;$/;"	t	typeref:struct:__anon29	file:
+seed_intv	aln.c	/^    int seed_intv;\/\/seed extract interval $/;"	m	struct:__anon13	file:	access:public
+seed_intv	test_aln.c	/^    int seed_intv;\/\/seed extract interval $/;"	m	struct:__anon28	file:	access:public
+seed_list	query.h	/^    seed_t *seed_list;$/;"	m	struct:__anon10	access:public
+seed_t	query.h	/^} seed_t;$/;"	t	typeref:struct:__anon8
+seedidx	setFileName.h	/^	char (*seedidx)[LEN_FILE_NAME];$/;"	m	struct:__anon30	access:public
+seeding_approx	aln.c	/^int seeding_approx(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+seeding_approx	test_aln.c	/^int seeding_approx(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+seeding_approx_alt	aln.c	/^int seeding_approx_alt(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+seeding_approx_alt	test_aln.c	/^int seeding_approx_alt(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+seeding_snpaware	aln.c	/^int seeding_snpaware(idx_t *idx, int l_seed, uint8_t *seed, aux_t *aux, table_t *table)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, aux_t *aux, table_t *table)
+seeding_snpaware	test_aln.c	/^int seeding_snpaware(idx_t *idx, int l_seed, uint8_t *seed, aux_t *aux, table_t *table)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, aux_t *aux, table_t *table)
+seq	aln.c	/^    uint8_t *seq;$/;"	m	struct:__anon12	file:	access:public
+seq	index.h	/^    uint32_t seq, idx;$/;"	m	struct:__anon25	access:public
+seq	query.h	/^    uint8_t *seq, *rseq, *qual;    $/;"	m	struct:__anon10	access:public
+seq	test_aln.c	/^    uint8_t *seq;$/;"	m	struct:__anon27	file:	access:public
+seq16s	index.h	/^    uint32_t *seq16s;$/;"	m	struct:__anon26	access:public
+seq16tobt	aln.c	/^void seq16tobt(uint32_t seq16, uint8_t *seq)$/;"	f	signature:(uint32_t seq16, uint8_t *seq)
+seq16tobt	test_aln.c	/^void seq16tobt(uint32_t seq16, uint8_t *seq)$/;"	f	signature:(uint32_t seq16, uint8_t *seq)
+seqL_buf	buldSeedExtIdxs.c	/^	uint32_t (*seqL_buf)[2];  \/\/截取的数据缓冲区$/;"	m	struct:__anon5	file:	access:public
+seqL_buf	index1.c	/^	uint32_t (*seqL_buf)[2];  \/\/截取的数据缓冲区$/;"	m	struct:__anon24	file:	access:public
+seqL_idxR	buldSeedExtIdxs.c	/^	uint32_t (*seqL_idxR)[3];  \/\/ relat[]的每个行上左序列和右序列对应的idx,即(seqL,bgnIdxR,endIdxR)	$/;"	m	struct:__anon5	file:	access:public
+seqL_idxR	index1.c	/^	uint32_t (*seqL_idxR)[3];  \/\/ relat[]的每个行上左序列和右序列对应的idx,即(seqL,bgnIdxR,endIdxR)	$/;"	m	struct:__anon24	file:	access:public
+seqR_buf	buldSeedExtIdxs.c	/^	uint32_t (*seqR_buf)[2];$/;"	m	struct:__anon5	file:	access:public
+seqR_buf	index1.c	/^	uint32_t (*seqR_buf)[2];$/;"	m	struct:__anon24	file:	access:public
+seq_buf	aln.c	/^    uint32_t *seq_buf[2];$/;"	m	struct:__anon14	file:	access:public
+seq_end	query.h	/^    uint32_t seq_start, seq_end;$/;"	m	struct:__anon10	access:public
+seq_len	bwt.h	/^	bwtint_t seq_len; \/\/ sequence length$/;"	m	struct:__anon6	access:public
+seq_start	query.h	/^    uint32_t seq_start, seq_end;$/;"	m	struct:__anon10	access:public
+setFileName	buldSeedExtIdxs.c	/^void setFileName(char *in_fname, FileName *out_fname,int flg );$/;"	p	file:	signature:(char *in_fname, FileName *out_fname,int flg )
+setFileName	index1.c	/^void setFileName(char *in_fname, FileName *out_fname,int flg );$/;"	p	file:	signature:(char *in_fname, FileName *out_fname,int flg )
+setFileName	setFileName.c	/^void setFileName(char *in_fname, FileName *f,int flg ){$/;"	f	signature:(char *in_fname, FileName *f,int flg )
+setFileName	setFileName.h	/^void setFileName(char *in_fname, FileName *out_fname,int flg );$/;"	p	signature:(char *in_fname, FileName *out_fname,int flg )
+size_t	bitmap.h	22;"	d
+smbwt	buldSeedExtIdxs.c	/^	uint8_t  *smbwt  ;$/;"	m	struct:__anon5	file:	access:public
+smbwt	buldSeedExtIdxs.c	/^	uint8_t  smbwt;$/;"	m	struct:__anon4	file:	access:public
+smbwt	index1.c	/^	uint8_t  *smbwt  ;$/;"	m	struct:__anon24	file:	access:public
+smbwt	index1.c	/^	uint8_t  smbwt;$/;"	m	struct:__anon23	file:	access:public
+smbwt	setFileName.h	/^	char (*smbwt)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+smpos	setFileName.h	/^	char (*smpos)[LEN_FILE_NAME]   ;$/;"	m	struct:__anon30	access:public
+snpaware_extend	aln.c	/^void snpaware_extend(idx_t *idx, int l_seed, uint8_t *seed, const int n_ext, const bwtint_t k, const bwtint_t l, table_t *table)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, const int n_ext, const bwtint_t k, const bwtint_t l, table_t *table)
+snpaware_extend	test_aln.c	/^void snpaware_extend(idx_t *idx, int l_seed, uint8_t *seed, const int n_ext, const bwtint_t k, const bwtint_t l, table_t *table)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, const int n_ext, const bwtint_t k, const bwtint_t l, table_t *table)
+sortL	buldSeedExtIdxs.c	/^	uint32_t *sortL; \/\/排序后的唯一序列$/;"	m	struct:__anon5	file:	access:public
+sortL	index1.c	/^	uint32_t *sortL; \/\/排序后的唯一序列$/;"	m	struct:__anon24	file:	access:public
+sortR	buldSeedExtIdxs.c	/^	uint32_t *sortR;$/;"	m	struct:__anon5	file:	access:public
+sortR	index1.c	/^	uint32_t *sortR;$/;"	m	struct:__anon24	file:	access:public
+start	variants.h	/^    uint32_t start;\/\/pack reference pos$/;"	m	struct:__anon31	access:public
+startSaIndex	bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+strdup	malloc_wrap.h	41;"	d
+strdup	malloc_wrap.h	43;"	d
+swap	bwt_gen.h	54;"	d
+table_t	aln.c	/^typedef kvec_t(seed_entry_t) table_t;$/;"	t	file:
+table_t	test_aln.c	/^typedef kvec_t(seed_entry_t) table_t;$/;"	t	file:
+targetNBit	bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+targetTextLength	bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+template_seed_clean	query.h	/^static inline void template_seed_clean(template_seed_t *p)$/;"	f	signature:(template_seed_t *p)
+template_seed_t	query.h	/^} template_seed_t;$/;"	t	typeref:struct:__anon7
+template_seq	query.h	/^    kstring_t template_seq;$/;"	m	struct:__anon7	access:public
+test_bsearch	bsearch.c	/^int test_bsearch()$/;"	f
+test_idx_reload	index.c	/^void test_idx_reload(const char *prefix)$/;"	f	signature:(const char *prefix)
+test_idx_reload	index1.c	/^void test_idx_reload(const char *prefix)$/;"	f	signature:(const char *prefix)
+test_idx_reload	index2.c	/^void test_idx_reload(const char *prefix)$/;"	f	signature:(const char *prefix)
+test_idx_reload	test_index.c	/^void test_idx_reload(const char *prefix)$/;"	f	signature:(const char *prefix)
+test_rpac	bntseq.c	/^int test_rpac(uint32_t l_pac, uint8_t *pac, uint8_t *rpac)$/;"	f	signature:(uint32_t l_pac, uint8_t *pac, uint8_t *rpac)
+test_seed_usage	gen_test_seeds.c	/^static int test_seed_usage()$/;"	f	file:
+test_seeding_approx	aln.c	/^int test_seeding_approx(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+test_seeding_approx	test_aln.c	/^int test_seeding_approx(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)$/;"	f	signature:(idx_t *idx, int l_seed, uint8_t *seed, table_t *table, int start, int end)
+textBuffer	bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+textLength	bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+trim_left	aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon13	file:	access:public
+trim_left	test_aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon28	file:	access:public
+trim_readno	query.c	/^static inline void trim_readno(kstring_t *s)$/;"	f	file:	signature:(kstring_t *s)
+trim_right	aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon13	file:	access:public
+trim_right	test_aln.c	/^    int trim_left, trim_right;\/\/trim <int> bases from 5'(left)or 3'(right) of each read before alignment$/;"	m	struct:__anon28	file:	access:public
+truncateLeft	bwt_gen.h	55;"	d
+truncateRight	bwt_gen.h	56;"	d
+ts	query.h	/^    template_seed_t *ts;$/;"	m	struct:__anon8	access:public
+ubyte_t	bntseq.h	/^typedef uint8_t ubyte_t;$/;"	t
+ubyte_t	bwt.h	/^typedef unsigned char ubyte_t;$/;"	t
+ubyte_t	is.c	/^typedef unsigned char ubyte_t;$/;"	t	file:
+uint64_v	utils.h	/^typedef struct { size_t n, m; uint64_t *a; } uint64_v;$/;"	t	typeref:struct:__anon17
+uper_bound	bsearch.c	/^bs_iter_t uper_bound(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)$/;"	f	signature:(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)
+uper_bound	bsearch.h	/^bs_iter_t uper_bound(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val);$/;"	p	signature:(bs_iter_t first, bs_iter_t last, bs_val_t *a, bs_val_t val)
+var	aln.c	/^    uint8_t var;$/;"	m	struct:__anon15	file:	access:public
+var	test_aln.c	/^    uint8_t var;$/;"	m	struct:__anon29	file:	access:public
+var	variants.h	/^    char* var;$/;"	m	struct:__anon31	access:public
+var	variants.h	/^    var_t *var;$/;"	m	struct:__anon33	access:public
+var_preseq	query.h	/^    const char* var_preseq;\/\/pre seq$/;"	m	struct:__anon7	access:public
+var_t	variants.h	/^} var_t;$/;"	t	typeref:struct:__anon31
+varclass	variants.h	/^    char varclass;$/;"	m	struct:__anon31	access:public
+variants_build	variants.c	/^all_var_t *variants_build(const char*fn)$/;"	f	signature:(const char*fn)
+variants_build	variants.h	/^all_var_t *variants_build(const char *fp);$/;"	p	signature:(const char *fp)
+variants_destroy	variants.c	/^void variants_destroy(all_var_t *av)$/;"	f	signature:(all_var_t *av)
+variants_destroy	variants.h	/^void variants_destroy(all_var_t *av);$/;"	p	signature:(all_var_t *av)
+variants_dump	variants.c	/^void variants_dump(all_var_t *av, const char *fn)$/;"	f	signature:(all_var_t *av, const char *fn)
+variants_dump	variants.h	/^void variants_dump(all_var_t *av, const char *fn);$/;"	p	signature:(all_var_t *av, const char *fn)
+variants_restore	variants.c	/^all_var_t *variants_restore(char *fn)$/;"	f	signature:(char *fn)
+variants_restore	variants.h	/^all_var_t *variants_restore(char *fn);$/;"	p	signature:(char *fn)
+vec_ext_t	buldSeedExtIdxs.c	/^typedef kvec_t(ext_t) vec_ext_t;$/;"	t	file:
+vec_ext_t	index1.c	/^typedef kvec_t(ext_t) vec_ext_t;$/;"	t	file:
+vec_ext_t	index2.c	/^typedef kvec_t(ext_t) vec_ext_t;$/;"	t	file:
+vec_ext_t	test_index.c	/^typedef kvec_t(ext_t) vec_ext_t;$/;"	t	file:
+vec_uint_t	buldSeedExtIdxs.c	/^typedef kvec_t(uint32_t) vec_uint_t;$/;"	t	file:
+vec_uint_t	index.c	/^typedef kvec_t(uint32_t) vec_uint_t;$/;"	t	file:
+vec_uint_t	index1.c	/^typedef kvec_t(uint32_t) vec_uint_t;$/;"	t	file:
+vec_uint_t	index2.c	/^typedef kvec_t(uint32_t) vec_uint_t;$/;"	t	file:
+vec_uint_t	test_index.c	/^typedef kvec_t(uint32_t) vec_uint_t;$/;"	t	file:
+vs_idx	query.h	/^    uint32_t vs_idx;\/\/variant_seq idx$/;"	m	struct:__anon7	access:public
+workingMemory	bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+working_data_destroy	aln.c	/^static inline void working_data_destroy(working_data_t *w)$/;"	f	file:	signature:(working_data_t *w)
+working_data_init	aln.c	/^static inline void working_data_init(working_data_t *w)$/;"	f	file:	signature:(working_data_t *w)
+working_data_t	aln.c	/^} working_data_t;$/;"	t	typeref:struct:__anon14	file:
+wrap_calloc	malloc_wrap.c	/^void *wrap_calloc(size_t nmemb, size_t size,$/;"	f	signature:(size_t nmemb, size_t size, const char *file, unsigned int line, const char *func)
+wrap_calloc	malloc_wrap.h	/^	void *wrap_calloc(size_t nmemb, size_t size,$/;"	p	signature:(size_t nmemb, size_t size, const char *file, unsigned int line, const char *func)
+wrap_malloc	malloc_wrap.c	/^void *wrap_malloc(size_t size,$/;"	f	signature:(size_t size, const char *file, unsigned int line, const char *func)
+wrap_malloc	malloc_wrap.h	/^	void *wrap_malloc(size_t size,$/;"	p	signature:(size_t size, const char *file, unsigned int line, const char *func)
+wrap_realloc	malloc_wrap.c	/^void *wrap_realloc(void *ptr, size_t size,$/;"	f	signature:(void *ptr, size_t size, const char *file, unsigned int line, const char *func)
+wrap_realloc	malloc_wrap.h	/^	void *wrap_realloc(void *ptr, size_t size,$/;"	p	signature:(void *ptr, size_t size, const char *file, unsigned int line, const char *func)
+wrap_strdup	malloc_wrap.c	/^char *wrap_strdup(const char *s,$/;"	f	signature:(const char *s, const char *file, unsigned int line, const char *func)
+wrap_strdup	malloc_wrap.h	/^	char *wrap_strdup(const char *s,$/;"	p	signature:(const char *s, const char *file, unsigned int line, const char *func)
+x	utils.h	/^	uint64_t x, y;$/;"	m	struct:__anon16	access:public
+xassert	utils.h	62;"	d
+xopen	utils.h	58;"	d
+xreopen	utils.h	59;"	d
+xzopen	utils.h	60;"	d
+y	utils.h	/^	uint64_t x, y;$/;"	m	struct:__anon16	access:public
